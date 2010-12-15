@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		8DD76F650486A84900D96B5E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.cpp */; settings = {ATTRIBUTES = (); }; };
 		8DD76F6A0486A84900D96B5E /* Nomlets.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859E8B029090EE04C91782 /* Nomlets.1 */; };
+		BF94E9EF12B891E1007B6F99 /* GraphicsCore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF94E9EE12B891E1007B6F99 /* GraphicsCore.cpp */; };
+		BF94EA3212B89A52007B6F99 /* InputCore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF94EA3112B89A52007B6F99 /* InputCore.cpp */; };
+		BF94EA5412B8A414007B6F99 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF94EA5312B8A414007B6F99 /* OpenGL.framework */; };
+		BF94EA7F12B8A8D3007B6F99 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF94EA7E12B8A8D3007B6F99 /* GLUT.framework */; };
+		BF94EA9112B8AB76007B6F99 /* EngineCore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF94EA9012B8AB76007B6F99 /* EngineCore.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +32,16 @@
 /* Begin PBXFileReference section */
 		08FB7796FE84155DC02AAC07 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		8DD76F6C0486A84900D96B5E /* Nomlets */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Nomlets; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF94E9ED12B891E1007B6F99 /* GraphicsCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicsCore.h; sourceTree = "<group>"; };
+		BF94E9EE12B891E1007B6F99 /* GraphicsCore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GraphicsCore.cpp; sourceTree = "<group>"; };
+		BF94EA3012B89A52007B6F99 /* InputCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputCore.h; sourceTree = "<group>"; };
+		BF94EA3112B89A52007B6F99 /* InputCore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InputCore.cpp; sourceTree = "<group>"; };
+		BF94EA5312B8A414007B6F99 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		BF94EA6012B8A76F007B6F99 /* EnvironmentDeclarations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnvironmentDeclarations.h; sourceTree = "<group>"; };
+		BF94EA7E12B8A8D3007B6F99 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		BF94EA8F12B8AB76007B6F99 /* EngineCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EngineCore.h; sourceTree = "<group>"; };
+		BF94EA9012B8AB76007B6F99 /* EngineCore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EngineCore.cpp; sourceTree = "<group>"; };
+		BF94EAAB12B8ADEA007B6F99 /* Environment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Environment.h; sourceTree = "<group>"; };
 		C6859E8B029090EE04C91782 /* Nomlets.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Nomlets.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -35,6 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF94EA5412B8A414007B6F99 /* OpenGL.framework in Frameworks */,
+				BF94EA7F12B8A8D3007B6F99 /* GLUT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +64,8 @@
 				08FB7795FE84155DC02AAC07 /* Source */,
 				C6859E8C029090F304C91782 /* Documentation */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
+				BF94EA5312B8A414007B6F99 /* OpenGL.framework */,
+				BF94EA7E12B8A8D3007B6F99 /* GLUT.framework */,
 			);
 			name = Nomlets;
 			sourceTree = "<group>";
@@ -54,6 +73,9 @@
 		08FB7795FE84155DC02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				BF94E9E312B890A9007B6F99 /* Controller */,
+				BF94E9E212B890A0007B6F99 /* View */,
+				BF94E9E112B8909B007B6F99 /* Model */,
 				08FB7796FE84155DC02AAC07 /* main.cpp */,
 			);
 			name = Source;
@@ -65,6 +87,35 @@
 				8DD76F6C0486A84900D96B5E /* Nomlets */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BF94E9E112B8909B007B6F99 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF94EA6012B8A76F007B6F99 /* EnvironmentDeclarations.h */,
+				BF94EAAB12B8ADEA007B6F99 /* Environment.h */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BF94E9E212B890A0007B6F99 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF94E9ED12B891E1007B6F99 /* GraphicsCore.h */,
+				BF94E9EE12B891E1007B6F99 /* GraphicsCore.cpp */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BF94E9E312B890A9007B6F99 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF94EA3012B89A52007B6F99 /* InputCore.h */,
+				BF94EA3112B89A52007B6F99 /* InputCore.cpp */,
+				BF94EA8F12B8AB76007B6F99 /* EngineCore.h */,
+				BF94EA9012B8AB76007B6F99 /* EngineCore.cpp */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		C6859E8C029090F304C91782 /* Documentation */ = {
@@ -119,6 +170,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DD76F650486A84900D96B5E /* main.cpp in Sources */,
+				BF94E9EF12B891E1007B6F99 /* GraphicsCore.cpp in Sources */,
+				BF94EA3212B89A52007B6F99 /* InputCore.cpp in Sources */,
+				BF94EA9112B8AB76007B6F99 /* EngineCore.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
