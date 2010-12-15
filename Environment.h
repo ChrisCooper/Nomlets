@@ -42,7 +42,7 @@ extern float maximumCameraDistance;
 extern const int SCREEN_WIDTH;
 extern const int SCREEN_HEIGHT;
 extern const int TIME_INTERVAL;
-
+extern float MAP_SIZE;
 
 
 //Lighting
@@ -57,3 +57,7 @@ extern GLfloat directedLightPosition[];
 extern bool keyDown[256];
 extern bool specialKeyDown[256];
 
+
+
+//Colors
+extern GLfloat groundColor[4];

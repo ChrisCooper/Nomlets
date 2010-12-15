@@ -30,9 +30,24 @@ void drawScene() {
 	
 	addLighting(); 
 	
+	drawObjects();
+	
 	glutSolidTeapot(1.0); 
     
    glutSwapBuffers();
+}
+
+void drawObjects(){
+	
+	glPushMatrix();
+	glTranslatef(0.0f, -1.0f, 0.0f);
+	glScalef(MAP_SIZE, 0.1f, MAP_SIZE);
+	glColor3fv(groundColor);
+	glutSolidCube(1.0f);
+	glPopMatrix();
+	
+	glColor3f(1.0f, 1.0f, 1.0f);
+	glutSolidTeapot(1.0); 
 }
 	
 void addLighting(){

@@ -273,8 +273,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>8</integer>
-									<integer>2</integer>
+									<integer>11</integer>
+									<integer>9</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -317,7 +317,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>CameraController.cpp</string>
+								<string>GraphicsCore.cpp</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -325,25 +325,29 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>CameraController.cpp</string>
+										<string>GraphicsCore.cpp</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>BFE15D1B12B8CC5900371B15</string>
+										<string>BFE15DA912B8D66B00371B15</string>
 										<key>history</key>
 										<array>
 											<string>BFE15C3712B8C6A500371B15</string>
 											<string>BFE15C4112B8C74B00371B15</string>
 											<string>BFE15CA712B8C96D00371B15</string>
-											<string>BFE15CC112B8CA9100371B15</string>
-											<string>BFE15CEA12B8CB7600371B15</string>
-											<string>BFE15CEB12B8CB7600371B15</string>
-											<string>BFE15D0F12B8CC3E00371B15</string>
-											<string>BFE15D1012B8CC3E00371B15</string>
 											<string>BFE15D1112B8CC3E00371B15</string>
-											<string>BFE15D1212B8CC3E00371B15</string>
 											<string>BFE15D1312B8CC3E00371B15</string>
-											<string>BFE15D1412B8CC3E00371B15</string>
+											<string>BFE15D5012B8CE8700371B15</string>
+											<string>BFE15D5112B8CE8700371B15</string>
+											<string>BFE15D5212B8CE8700371B15</string>
+											<string>BFE15D5A12B8CF4C00371B15</string>
+											<string>BFE15D6512B8CF7800371B15</string>
+											<string>BFE15D6612B8CF7800371B15</string>
+											<string>BFE15D9B12B8D07200371B15</string>
+											<string>BFE15D9C12B8D07200371B15</string>
+											<string>BFE15DA512B8D65000371B15</string>
+											<string>BFE15DA612B8D65000371B15</string>
+											<string>BFE15D9A12B8D07200371B15</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -565,6 +569,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -587,8 +593,6 @@
 							<string>218pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>

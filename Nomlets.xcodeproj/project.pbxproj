@@ -15,6 +15,10 @@
 		BF94EA7F12B8A8D3007B6F99 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF94EA7E12B8A8D3007B6F99 /* GLUT.framework */; };
 		BF94EA9112B8AB76007B6F99 /* EngineCore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF94EA9012B8AB76007B6F99 /* EngineCore.cpp */; };
 		BFE15B4E12B8BB1500371B15 /* CameraController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFE15B4D12B8BB1500371B15 /* CameraController.cpp */; };
+		BFE15D4812B8CE0600371B15 /* FoodBit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFE15D4012B8CE0600371B15 /* FoodBit.cpp */; };
+		BFE15D4912B8CE0600371B15 /* Logistics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFE15D4212B8CE0600371B15 /* Logistics.cpp */; };
+		BFE15D4A12B8CE0600371B15 /* ModelManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFE15D4412B8CE0600371B15 /* ModelManager.cpp */; };
+		BFE15D4B12B8CE0600371B15 /* Nomlet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFE15D4612B8CE0600371B15 /* Nomlet.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +49,14 @@
 		BF94EAAB12B8ADEA007B6F99 /* Environment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Environment.h; sourceTree = "<group>"; };
 		BFE15B4C12B8BB1500371B15 /* CameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraController.h; sourceTree = "<group>"; };
 		BFE15B4D12B8BB1500371B15 /* CameraController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CameraController.cpp; sourceTree = "<group>"; };
+		BFE15D4012B8CE0600371B15 /* FoodBit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FoodBit.cpp; sourceTree = "<group>"; };
+		BFE15D4112B8CE0600371B15 /* FoodBit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodBit.h; sourceTree = "<group>"; };
+		BFE15D4212B8CE0600371B15 /* Logistics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Logistics.cpp; sourceTree = "<group>"; };
+		BFE15D4312B8CE0600371B15 /* Logistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logistics.h; sourceTree = "<group>"; };
+		BFE15D4412B8CE0600371B15 /* ModelManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ModelManager.cpp; sourceTree = "<group>"; };
+		BFE15D4512B8CE0600371B15 /* ModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelManager.h; sourceTree = "<group>"; };
+		BFE15D4612B8CE0600371B15 /* Nomlet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Nomlet.cpp; sourceTree = "<group>"; };
+		BFE15D4712B8CE0600371B15 /* Nomlet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nomlet.h; sourceTree = "<group>"; };
 		C6859E8B029090EE04C91782 /* Nomlets.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Nomlets.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +107,14 @@
 		BF94E9E112B8909B007B6F99 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BFE15D4012B8CE0600371B15 /* FoodBit.cpp */,
+				BFE15D4112B8CE0600371B15 /* FoodBit.h */,
+				BFE15D4212B8CE0600371B15 /* Logistics.cpp */,
+				BFE15D4312B8CE0600371B15 /* Logistics.h */,
+				BFE15D4412B8CE0600371B15 /* ModelManager.cpp */,
+				BFE15D4512B8CE0600371B15 /* ModelManager.h */,
+				BFE15D4612B8CE0600371B15 /* Nomlet.cpp */,
+				BFE15D4712B8CE0600371B15 /* Nomlet.h */,
 				BF94EA6012B8A76F007B6F99 /* EnvironmentDeclarations.h */,
 				BF94EAAB12B8ADEA007B6F99 /* Environment.h */,
 			);
@@ -179,6 +199,10 @@
 				BF94EA3212B89A52007B6F99 /* InputCore.cpp in Sources */,
 				BF94EA9112B8AB76007B6F99 /* EngineCore.cpp in Sources */,
 				BFE15B4E12B8BB1500371B15 /* CameraController.cpp in Sources */,
+				BFE15D4812B8CE0600371B15 /* FoodBit.cpp in Sources */,
+				BFE15D4912B8CE0600371B15 /* Logistics.cpp in Sources */,
+				BFE15D4A12B8CE0600371B15 /* ModelManager.cpp in Sources */,
+				BFE15D4B12B8CE0600371B15 /* Nomlet.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

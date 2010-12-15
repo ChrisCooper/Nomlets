@@ -28,13 +28,14 @@ float cameraDistanceSpeed = 0.0f;
 float cameraDistanceInertia = 0.5f;
 float cameraDistanceAcceleration = 0.3f;
 float minimumCameraDistance = 3.0f;
-float maximumCameraDistance = 20.0f;
+float maximumCameraDistance = 30.0f;
 
 
 //Game configuration
-const int SCREEN_WIDTH = 800;
-const int SCREEN_HEIGHT = 600;
+const int SCREEN_WIDTH = 1200;
+const int SCREEN_HEIGHT = 800;
 const int TIME_INTERVAL = 25;
+float MAP_SIZE = 10.0f;
 
 //Lighting
 GLfloat ambientColor[] = {0.2f, 0.2f, 0.2f, 1.0f};
@@ -47,3 +48,8 @@ GLfloat directedLightPosition[] = {-1.0f, 0.5f, 0.5f, 0.0f};
 //Input
 bool keyDown[256];
 bool specialKeyDown[256];
+
+
+//Colors
+GLfloat groundColor[4] = {0.3f, 0.9f, 0.3f, 1.0f};
+

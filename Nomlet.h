@@ -1,0 +1,29 @@
+/*
+ *  NonNom.h
+ *  Survival
+ *
+ *  Created by Chris Cooper on 10-12-14.
+ *  Copyright 2010 Chris Cooper. All rights reserved.
+ *
+ */
+
+#include "Logistics.h"
+#include "FoodBit.h"
+
+#ifndef _NOMLET_
+#define _NOMLET_
+
+class Nomlet {
+	
+public:
+	Nomlet();
+	Nomlet(Nomlet &father, Nomlet &mother);
+	void eatFoodBit(FoodBit &foodBit);
+	
+private:
+	Coordinate location;
+	Coordinate velocity;
+	double energy;
+};
+
+#endif

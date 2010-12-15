@@ -25,6 +25,7 @@ using namespace std;
 
 void initRendering();
 void drawScene();
+void drawObjects();
 void addLighting();
 void handleResize(int w, int h);
 
