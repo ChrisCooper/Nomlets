@@ -14,6 +14,7 @@
 		BF94EA5412B8A414007B6F99 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF94EA5312B8A414007B6F99 /* OpenGL.framework */; };
 		BF94EA7F12B8A8D3007B6F99 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF94EA7E12B8A8D3007B6F99 /* GLUT.framework */; };
 		BF94EA9112B8AB76007B6F99 /* EngineCore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF94EA9012B8AB76007B6F99 /* EngineCore.cpp */; };
+		BFE15B4E12B8BB1500371B15 /* CameraController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFE15B4D12B8BB1500371B15 /* CameraController.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +43,8 @@
 		BF94EA8F12B8AB76007B6F99 /* EngineCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EngineCore.h; sourceTree = "<group>"; };
 		BF94EA9012B8AB76007B6F99 /* EngineCore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EngineCore.cpp; sourceTree = "<group>"; };
 		BF94EAAB12B8ADEA007B6F99 /* Environment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Environment.h; sourceTree = "<group>"; };
+		BFE15B4C12B8BB1500371B15 /* CameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraController.h; sourceTree = "<group>"; };
+		BFE15B4D12B8BB1500371B15 /* CameraController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CameraController.cpp; sourceTree = "<group>"; };
 		C6859E8B029090EE04C91782 /* Nomlets.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Nomlets.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +117,8 @@
 				BF94EA3112B89A52007B6F99 /* InputCore.cpp */,
 				BF94EA8F12B8AB76007B6F99 /* EngineCore.h */,
 				BF94EA9012B8AB76007B6F99 /* EngineCore.cpp */,
+				BFE15B4C12B8BB1500371B15 /* CameraController.h */,
+				BFE15B4D12B8BB1500371B15 /* CameraController.cpp */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -173,6 +178,7 @@
 				BF94E9EF12B891E1007B6F99 /* GraphicsCore.cpp in Sources */,
 				BF94EA3212B89A52007B6F99 /* InputCore.cpp in Sources */,
 				BF94EA9112B8AB76007B6F99 /* EngineCore.cpp in Sources */,
+				BFE15B4E12B8BB1500371B15 /* CameraController.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

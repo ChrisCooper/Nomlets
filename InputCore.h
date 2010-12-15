@@ -12,6 +12,13 @@
 
 #import <iostream>
 
+using namespace std;
+
+void checkInput();
+
 void handleKeypress(unsigned char key, int x, int y);
+void handleKeyUp(unsigned char key, int x, int y);
+void handleSpecialKey(int key, int x, int y);
+void handleSpecialKeyUp(int key, int x, int y);
 
 #endif

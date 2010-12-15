@@ -13,6 +13,8 @@
 #include "EngineCore.h"
 #include "EnvironmentDeclarations.h"
 
+void setHandlers();
+
 int main(int argc, char** argv) {
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
@@ -22,12 +24,20 @@ int main(int argc, char** argv) {
 	
     initRendering();
 	
-    glutDisplayFunc(drawScene);
-    glutKeyboardFunc(handleKeypress);
-    glutReshapeFunc(handleResize);
+	setHandlers();
 	
     glutTimerFunc(25, update, 0);
 	
     glutMainLoop();
     return 0;
+}
+
+void setHandlers(){
+	glutDisplayFunc(drawScene);
+    glutKeyboardFunc(handleKeypress);
+	glutKeyboardUpFunc(handleKeyUp);
+	glutSpecialFunc(handleSpecialKey);
+	glutSpecialUpFunc(handleSpecialKeyUp);
+	glutIgnoreKeyRepeat(true);
+	glutReshapeFunc(handleResize);
 }

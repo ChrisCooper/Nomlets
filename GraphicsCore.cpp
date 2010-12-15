@@ -24,7 +24,7 @@ void drawScene() {
 	glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
 
-	gluLookAt(10.0, 5.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
+	gluLookAt(cameraDistance, 15.0 - cameraDistance*0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
 
 	glRotatef(cameraAngle, 0.0f, 1.0f, 0.0f);
 	

@@ -9,16 +9,13 @@
 
 #include "EngineCore.h"
 #include "Environment.h"
+#include "CameraController.h"
+#include "InputCore.h"
 
-//Called every 25(?) milliseconds
 void update(int value) {
-    cameraAngle -= 0.2f;
-    if (cameraAngle > 360) {
-        cameraAngle -= 360;
-    }
-	if (cameraAngle < 0) {
-        cameraAngle += 360;
-    }
+	checkInput();
+	
+	updateCamera();
 	
 	glutPostRedisplay();
 	
