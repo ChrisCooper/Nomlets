@@ -10,9 +10,13 @@
 #ifndef _LOGISTICS_
 #define _LOGISTICS_
 
+#include <iostream>
+
 struct Coordinate{
 	float x;
 	float y;
 };
+
+Coordinate randomMapLocation();
 
 #endif

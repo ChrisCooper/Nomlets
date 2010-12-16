@@ -26,6 +26,7 @@ using namespace std;
 void initRendering();
 void drawScene();
 void drawObjects();
+void drawNomlets();
 void drawFoodbits();
 void drawGround();
 void addLighting();

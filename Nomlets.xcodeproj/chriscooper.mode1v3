@@ -273,7 +273,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>22</integer>
+									<integer>21</integer>
 									<integer>13</integer>
 									<integer>1</integer>
 									<integer>0</integer>
@@ -317,7 +317,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>EnvironmentDeclarations.h</string>
+								<string>Nomlet.cpp</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -325,35 +325,37 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>EnvironmentDeclarations.h</string>
+										<string>Nomlet.cpp</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>BFD2413312B9D00100911FC3</string>
+										<string>BFD2436E12B9E8CE00911FC3</string>
 										<key>history</key>
 										<array>
 											<string>BFE15C4112B8C74B00371B15</string>
 											<string>BFEF1B5612B9600B001237BF</string>
 											<string>BFEF1BB012B9622C001237BF</string>
-											<string>BFEF1BB212B9622C001237BF</string>
-											<string>BFEF1BB312B9622C001237BF</string>
 											<string>BFEF1BBE12B9622C001237BF</string>
-											<string>BFEF1BCE12B9686C001237BF</string>
-											<string>BF09229512B996A300A7EEB6</string>
-											<string>BF09237F12B9C8A000A7EEB6</string>
 											<string>BFD240AA12B9CC9900911FC3</string>
-											<string>BFD240B412B9CCB000911FC3</string>
-											<string>BFD240B912B9CCE800911FC3</string>
-											<string>BFD240C312B9CD2400911FC3</string>
-											<string>BFD2411512B9CF7000911FC3</string>
 											<string>BFD2411612B9CF7000911FC3</string>
-											<string>BFD2411812B9CF7000911FC3</string>
-											<string>BFD2411D12B9CFDB00911FC3</string>
-											<string>BFD2411E12B9CFDB00911FC3</string>
-											<string>BFD2411F12B9CFDB00911FC3</string>
-											<string>BFD2412012B9CFDB00911FC3</string>
-											<string>BFD2412712B9CFE400911FC3</string>
-											<string>BFD2412812B9CFE400911FC3</string>
+											<string>BFD241AA12B9D42800911FC3</string>
+											<string>BFD2427B12B9DB7500911FC3</string>
+											<string>BFD2429612B9DBDC00911FC3</string>
+											<string>BFD2429712B9DBDC00911FC3</string>
+											<string>BFD2429812B9DBDC00911FC3</string>
+											<string>BFD2429B12B9DBDC00911FC3</string>
+											<string>BFD2429E12B9DC5E00911FC3</string>
+											<string>BFD242A012B9DC5E00911FC3</string>
+											<string>BFD242A212B9DC5E00911FC3</string>
+											<string>BFD242C712B9DDC600911FC3</string>
+											<string>BFD242C812B9DDC600911FC3</string>
+											<string>BFD242CA12B9DDC600911FC3</string>
+											<string>BFD2431412B9DFC000911FC3</string>
+											<string>BFD2431D12B9E04300911FC3</string>
+											<string>BFD2432512B9E19F00911FC3</string>
+											<string>BFD2435312B9E5D000911FC3</string>
+											<string>BFD2436712B9E71400911FC3</string>
+											<string>BFD2436812B9E71400911FC3</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -551,11 +553,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>BFD2436F12B9E8CE00911FC3</string>
 		<string>BFD2408812B9CB8F00911FC3</string>
 		<string>BFD2408912B9CB8F00911FC3</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>BF94E9DC12B88F4E007B6F99</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/chriscooper/Programming/Nomlets/Nomlets.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -575,12 +578,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>Nomlet.cpp</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -938,7 +943,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

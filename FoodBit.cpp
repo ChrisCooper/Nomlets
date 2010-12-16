@@ -12,14 +12,7 @@
 #include <math.h>
 
 Foodbit::Foodbit(){
-	location.x = (((float)rand()) / RAND_MAX) * MAP_SIZE / 2;
-	if (rand() % 2 ){
-		location.x = -location.x;
-	}
-	location.y = (((float)rand()) / RAND_MAX) * MAP_SIZE / 2;
-	if (rand() % 2){
-		location.y = -location.y;
-	}
+	location = randomMapLocation();
 	
 	energy = rand() % (MAX_FOOD_VALUE - MIN_FOOD_VALUE) + MIN_FOOD_VALUE;
 	size = sqrt(energy);

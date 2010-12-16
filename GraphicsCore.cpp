@@ -9,6 +9,7 @@
 
 #include "GraphicsCore.h"
 #include "Environment.h"
+#include "Utilities.h"
 
 void initRendering() {
     glEnable(GL_DEPTH_TEST);
@@ -31,6 +32,9 @@ void drawScene() {
 	addLighting(); 
 	
 	drawObjects();
+	
+	glTranslatef(0.0f, 0.2f, 0.0f);
+	drawAxes(1.0);
     
    glutSwapBuffers();
 }
@@ -40,31 +44,39 @@ void drawObjects(){
 	drawGround();
 	glTranslatef(0.0f, -1.0f, 0.0f);
 	drawFoodbits();
-//	drawNomlets();
+	drawNomlets();
 }
 
-/*void drawNomlets(){
+void drawNomlets(){
 	vector<Nomlet> &nomlets = manager->getNomlets();
-	glTranslatef(0.0f, -1.0f, 0.0f);
 	
+	glPushMatrix();
 	glTranslatef(0.0f, 0.14f, 0.0f);
 	
-	for (int i = 0; i < foodbits.size(); i++) {
-		Foodbit &foodbit = foodbits[i];
+	glColor3fv(nomletColor);
+	
+	for (int i = 0; i < nomlets.size(); i++) {
+		Nomlet &nomlet = nomlets[i];
 		
 		glPushMatrix();
-		glTranslatef(foodbit.getLocation().x, 0.0f, foodbit.getLocation().y);
-		glutSolidSphere(foodbit.getSize()/50, 6, 3);
+		glTranslatef(nomlet.getLocation().x, 0.0f, nomlet.getLocation().y);
+		glRotatef(90+nomlet.getDirection(), 0.0f, 1.0f, 0.0f);
+		
+		float coneHeight = nomlet.getSize()*NOMLET_SIZE*NOMLET_LENGTH;
+		glTranslatef(0.0f, 0.0f, -coneHeight/2);
+		glutSolidCone(nomlet.getSize()*NOMLET_SIZE, coneHeight, 4, 2);
+		
 		glPopMatrix();
 	}
-}*/
+	glPopMatrix();
+}
 
 void drawFoodbits(){
 	vector<Foodbit> &foodbits = manager->getFoodbits();
 	
 	glPushMatrix();
 	glTranslatef(0.0f, 0.14f, 0.0f);
-	
+	glColor4fv(foodbitColor);
 	for (int i = 0; i < foodbits.size(); i++) {
 		Foodbit &foodbit = foodbits[i];
 		

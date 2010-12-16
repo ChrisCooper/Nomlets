@@ -14,6 +14,7 @@
 		BF94EA5412B8A414007B6F99 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF94EA5312B8A414007B6F99 /* OpenGL.framework */; };
 		BF94EA7F12B8A8D3007B6F99 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF94EA7E12B8A8D3007B6F99 /* GLUT.framework */; };
 		BF94EA9112B8AB76007B6F99 /* EngineCore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF94EA9012B8AB76007B6F99 /* EngineCore.cpp */; };
+		BFD2417512B9D33400911FC3 /* Utilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFD2417412B9D33400911FC3 /* Utilities.cpp */; };
 		BFE15B4E12B8BB1500371B15 /* CameraController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFE15B4D12B8BB1500371B15 /* CameraController.cpp */; };
 		BFE15D4812B8CE0600371B15 /* Foodbit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFE15D4012B8CE0600371B15 /* Foodbit.cpp */; };
 		BFE15D4912B8CE0600371B15 /* Logistics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFE15D4212B8CE0600371B15 /* Logistics.cpp */; };
@@ -47,6 +48,8 @@
 		BF94EA8F12B8AB76007B6F99 /* EngineCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EngineCore.h; sourceTree = "<group>"; };
 		BF94EA9012B8AB76007B6F99 /* EngineCore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EngineCore.cpp; sourceTree = "<group>"; };
 		BF94EAAB12B8ADEA007B6F99 /* Environment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Environment.h; sourceTree = "<group>"; };
+		BFD2417312B9D33400911FC3 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		BFD2417412B9D33400911FC3 /* Utilities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utilities.cpp; sourceTree = "<group>"; };
 		BFE15B4C12B8BB1500371B15 /* CameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraController.h; sourceTree = "<group>"; };
 		BFE15B4D12B8BB1500371B15 /* CameraController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CameraController.cpp; sourceTree = "<group>"; };
 		BFE15D4012B8CE0600371B15 /* Foodbit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Foodbit.cpp; sourceTree = "<group>"; };
@@ -92,6 +95,8 @@
 				BF94E9E312B890A9007B6F99 /* Controller */,
 				BF94E9E212B890A0007B6F99 /* View */,
 				BF94E9E112B8909B007B6F99 /* Model */,
+				BFD2417312B9D33400911FC3 /* Utilities.h */,
+				BFD2417412B9D33400911FC3 /* Utilities.cpp */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -203,6 +208,7 @@
 				BFE15D4912B8CE0600371B15 /* Logistics.cpp in Sources */,
 				BFE15D4A12B8CE0600371B15 /* ModelManager.cpp in Sources */,
 				BFE15D4B12B8CE0600371B15 /* Nomlet.cpp in Sources */,
+				BFD2417512B9D33400911FC3 /* Utilities.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

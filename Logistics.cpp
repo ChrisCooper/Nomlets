@@ -8,4 +8,18 @@
  */
 
 #include "Logistics.h"
+#include "Environment.h"
+#include "Utilities.h"
 
+Coordinate randomMapLocation(){
+	Coordinate location;
+	location.x = zeroToOneUniform() * (MAP_SIZE * 0.975) / 2;
+	if (rand() % 2 ){
+		location.x = -location.x;
+	}
+	location.y = zeroToOneUniform() * (MAP_SIZE * 0.975) / 2;
+	if (rand() % 2){
+		location.y = -location.y;
+	}
+	return location;
+}

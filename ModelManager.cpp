@@ -10,9 +10,14 @@
 #include "ModelManager.h"
 
 ModelManager::ModelManager(){
-	for (int i = 0; i < 100; i++){
+	for (int i = 0; i < 200; i++){
 		Foodbit *foodbit = new Foodbit();
 		foodbits.push_back(*foodbit);
+	}
+	
+	for (int i = 0; i < 10; i++){
+		Nomlet *nomlet = new Nomlet();
+		nomlets.push_back(*nomlet);
 	}
 }
 

@@ -17,7 +17,21 @@ void update(int value) {
 	
 	updateCamera();
 	
+	moveNomlets();
+	
 	glutPostRedisplay();
 	
 	glutTimerFunc(25, update, 0);
+}
+
+
+void moveNomlets(){
+	vector<Nomlet> &nomlets = manager->getNomlets();
+	
+	for (int i = 0; i < nomlets.size(); i++) {
+		Nomlet &nomlet = nomlets[i];
+		
+		nomlet.move();
+	}
+
 }

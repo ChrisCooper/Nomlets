@@ -18,3 +18,5 @@
 #endif
 
 void update(int value);
+
+void moveNomlets();

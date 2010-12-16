@@ -41,6 +41,7 @@ const int TIME_INTERVAL = 25;
 float MAP_SIZE = 10.0f;
 int MAX_FOOD_VALUE = 1500;
 int MIN_FOOD_VALUE = 50;
+int NOMLET_STARTING_ENERGY = 1000;
 
 //Lighting
 GLfloat ambientColor[] = {0.2f, 0.2f, 0.2f, 1.0f};
@@ -56,10 +57,14 @@ bool specialKeyDown[256];
 
 
 //Colors
-GLfloat groundColor[4] = {0.3f, 0.9f, 0.3f, 1.0f};
+GLfloat groundColor[4] = {0.1f, 0.4f, 0.1f, 1.0f};
+GLfloat foodbitColor[4] = {0.7f, 0.7f, 0.0f, 1.0f};
+GLfloat nomletColor[4] = {0.3f, 0.3f, 1.0f, 1.0f};
 
 //Object Attributes
-float FOODBIT_SIZE = 0.003;
+float FOODBIT_SIZE = 0.002f;
+float NOMLET_SIZE = 0.003f;
+float NOMLET_LENGTH = 2.5f;
 
 
 //Game Globals

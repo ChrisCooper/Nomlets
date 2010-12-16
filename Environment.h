@@ -48,6 +48,7 @@ extern const int TIME_INTERVAL;
 extern float MAP_SIZE;
 extern int MAX_FOOD_VALUE;
 extern int MIN_FOOD_VALUE;
+extern int NOMLET_STARTING_ENERGY;
 
 
 //Lighting
@@ -65,9 +66,13 @@ extern bool specialKeyDown[256];
 
 //Colors
 extern GLfloat groundColor[4];
+extern GLfloat foodbitColor[4];
+extern GLfloat nomletColor[4];
 
 //Object Attributes
 extern float FOODBIT_SIZE;
+extern float NOMLET_SIZE;
+extern float NOMLET_LENGTH;
 
 //Game Globals
 extern ModelManager *manager;
