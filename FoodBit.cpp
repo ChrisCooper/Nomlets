@@ -24,7 +24,10 @@ void Foodbit::evaluateSize(){
 
 void Foodbit::giveFood(Nomlet &nomlet){
 	float energyGiven = (rand() % (MAX_FOOD_VALUE - MIN_FOOD_VALUE) + MIN_FOOD_VALUE) / AVG_FOOD_BITES;
-	energyGiven = max(energyGiven, 0.0f);
+	energyGiven = min((float)energy, energyGiven);
+	if (energyGiven < 0){
+		energyGiven = 0;
+	}
 	energy -= energyGiven;
 	nomlet.giveEnergy(energyGiven);
 	evaluateSize();

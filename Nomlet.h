@@ -31,7 +31,6 @@ public:
 	void capLocation();
 	void accelerate();
 	void turn(float amount);
-	void eatIfPossible(Foodbit &theFoodbit);
 	void giveEnergy(double energyGiven);
 	
 private:

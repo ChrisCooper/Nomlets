@@ -60,13 +60,12 @@ void drawNomlets(){
 		glTranslatef(nomlet.getLocation().x, 0.0f, nomlet.getLocation().y);
 		glRotatef(90+nomlet.getDirection(), 0.0f, 1.0f, 0.0f);
 		
-		float coneHeight = nomlet.getSize()*NOMLET_SIZE*NOMLET_LENGTH;
-		glTranslatef(0.0f, 0.0f, -coneHeight/2);
+		glTranslatef(0.0f, 0.0f, -NOMLET_LENGTH/2);
 		
 		float colorModifier = nomlet.getEnergy() / (MAX_FOOD_VALUE*5);
 		glColor4f(nomletColor[0] * colorModifier, nomletColor[1]*colorModifier, nomletColor[2]*colorModifier, 1.0f);
 		
-		glutSolidCone(nomlet.getSize()*NOMLET_SIZE, coneHeight, 4, 2);
+		glutSolidCone(NOMLET_SIZE, NOMLET_LENGTH, 4, 2);
 		
 		glPopMatrix();
 	}

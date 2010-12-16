@@ -49,6 +49,7 @@ extern float MAP_SIZE;
 extern int MAX_FOOD_VALUE;
 extern int MIN_FOOD_VALUE;
 extern int AVG_FOOD_BITES;
+
 extern int NOMLET_STARTING_ENERGY;
 extern float NOMLET_TOP_SPEED;
 extern float NOMLET_INERTIA;
@@ -71,6 +72,7 @@ extern bool specialKeyDown[256];
 
 //Colors
 extern GLfloat groundColor[4];
+
 extern GLfloat foodbitColor[4];
 extern GLfloat nomletColor[4];
 
@@ -81,3 +83,10 @@ extern float NOMLET_LENGTH;
 
 //Game Globals
 extern ModelManager *manager;
+
+
+//Costs
+extern float MOVEMENT_COST;
+
+
+

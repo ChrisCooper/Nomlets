@@ -42,7 +42,7 @@ float MAP_SIZE = 10.0f;
 int MAX_FOOD_VALUE = 1500;
 int MIN_FOOD_VALUE = 50;
 int AVG_FOOD_BITES = 10;
-int NOMLET_STARTING_ENERGY = 1000;
+int NOMLET_STARTING_ENERGY = MAX_FOOD_VALUE*3;
 float NOMLET_TOP_SPEED = 0.03f;
 float NOMLET_INERTIA = 0.8f;
 float NOMLET_ACCELLERATION = 0.05f;
@@ -69,9 +69,13 @@ GLfloat nomletColor[4] = {0.3f, 0.3f, 1.0f, 1.0f};
 
 //Object Attributes
 float FOODBIT_SIZE = 0.002f;
-float NOMLET_SIZE = 0.003f;
-float NOMLET_LENGTH = 2.5f;
+float NOMLET_SIZE = 0.1f;
+float NOMLET_LENGTH = 0.2f;
 
 
 //Game Globals
 ModelManager *manager = NULL;
+
+
+//Costs
+float MOVEMENT_COST = 20.0f;

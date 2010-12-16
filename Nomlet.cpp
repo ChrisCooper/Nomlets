@@ -18,7 +18,7 @@ Nomlet::Nomlet(){
 	speed = NOMLET_TOP_SPEED;
 	
 	energy = NOMLET_STARTING_ENERGY;
-	size = sqrt(energy);
+	size = NOMLET_SIZE;
 	
 	direction = rand() % 360;
 	
@@ -49,13 +49,11 @@ void Nomlet::move(){
 	location.x += speed * cos(degreeToRadian(-direction));
 	location.y += speed * sin(degreeToRadian(-direction));
 	
+	energy -= MOVEMENT_COST * (speed/NOMLET_TOP_SPEED);
+	
 	capLocation();
 	
 	speed *= NOMLET_INERTIA;
-}
-
-void Nomlet::eatIfPossible(Foodbit &theFoodbit){
-	
 }
 
 void Nomlet::giveEnergy(double energyGiven){

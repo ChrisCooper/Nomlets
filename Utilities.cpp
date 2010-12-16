@@ -21,7 +21,7 @@
 #define PI 3.14159265f
 
 float zeroToOneUniform(){
-	return (((float)rand()) / RAND_MAX);
+	return (((float)rand()) / ((float)RAND_MAX + 1));
 }
 
 float degreeToRadian(float degree) {
