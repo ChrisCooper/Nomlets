@@ -273,8 +273,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>21</integer>
-									<integer>13</integer>
+									<integer>12</integer>
+									<integer>10</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -317,7 +317,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Nomlet.cpp</string>
+								<string>GraphicsCore.cpp</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -325,11 +325,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Nomlet.cpp</string>
+										<string>GraphicsCore.cpp</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>BFD2436E12B9E8CE00911FC3</string>
+										<string>BFD244EA12B9FA4700911FC3</string>
 										<key>history</key>
 										<array>
 											<string>BFE15C4112B8C74B00371B15</string>
@@ -337,25 +337,25 @@
 											<string>BFEF1BB012B9622C001237BF</string>
 											<string>BFEF1BBE12B9622C001237BF</string>
 											<string>BFD240AA12B9CC9900911FC3</string>
-											<string>BFD2411612B9CF7000911FC3</string>
-											<string>BFD241AA12B9D42800911FC3</string>
-											<string>BFD2427B12B9DB7500911FC3</string>
-											<string>BFD2429612B9DBDC00911FC3</string>
-											<string>BFD2429712B9DBDC00911FC3</string>
-											<string>BFD2429812B9DBDC00911FC3</string>
-											<string>BFD2429B12B9DBDC00911FC3</string>
-											<string>BFD2429E12B9DC5E00911FC3</string>
-											<string>BFD242A012B9DC5E00911FC3</string>
-											<string>BFD242A212B9DC5E00911FC3</string>
-											<string>BFD242C712B9DDC600911FC3</string>
-											<string>BFD242C812B9DDC600911FC3</string>
-											<string>BFD242CA12B9DDC600911FC3</string>
-											<string>BFD2431412B9DFC000911FC3</string>
 											<string>BFD2431D12B9E04300911FC3</string>
 											<string>BFD2432512B9E19F00911FC3</string>
-											<string>BFD2435312B9E5D000911FC3</string>
-											<string>BFD2436712B9E71400911FC3</string>
-											<string>BFD2436812B9E71400911FC3</string>
+											<string>BFD243AE12B9ECDB00911FC3</string>
+											<string>BFD2440512B9F0B200911FC3</string>
+											<string>BFD2440C12B9F15200911FC3</string>
+											<string>BFD2448612B9F6BD00911FC3</string>
+											<string>BFD2448712B9F6BD00911FC3</string>
+											<string>BFD2448A12B9F6BD00911FC3</string>
+											<string>BFD2449912B9F6ED00911FC3</string>
+											<string>BFD2449B12B9F6ED00911FC3</string>
+											<string>BFD244AB12B9F75A00911FC3</string>
+											<string>BFD244B212B9F7C100911FC3</string>
+											<string>BFD244BE12B9F85B00911FC3</string>
+											<string>BFD244BF12B9F85B00911FC3</string>
+											<string>BFD244D912B9F92400911FC3</string>
+											<string>BFD244DA12B9F92400911FC3</string>
+											<string>BFD244E412B9F95600911FC3</string>
+											<string>BFD244E512B9F95600911FC3</string>
+											<string>BFD2440B12B9F15200911FC3</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -553,12 +553,11 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>BFD2436F12B9E8CE00911FC3</string>
 		<string>BFD2408812B9CB8F00911FC3</string>
 		<string>BFD2408912B9CB8F00911FC3</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>BF94E9DC12B88F4E007B6F99</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/chriscooper/Programming/Nomlets/Nomlets.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -578,30 +577,30 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Nomlet.cpp</string>
+								<string>Foodbit.cpp</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {500, 218}}</string>
+								<string>{{0, 0}, {1156, 490}}</string>
 								<key>RubberWindowFrame</key>
-								<string>42 332 500 500 0 0 1440 878 </string>
+								<string>79 106 1156 772 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>218pt</string>
+							<string>490pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -616,9 +615,9 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 223}, {500, 236}}</string>
+								<string>{{0, 495}, {1156, 236}}</string>
 								<key>RubberWindowFrame</key>
-								<string>42 332 500 500 0 0 1440 878 </string>
+								<string>79 106 1156 772 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXBuildResultsModule</string>
@@ -627,7 +626,7 @@
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>459pt</string>
+					<string>731pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -650,7 +649,7 @@
 			<key>WindowContentMinSize</key>
 			<string>486 300</string>
 			<key>WindowString</key>
-			<string>42 332 500 500 0 0 1440 878 </string>
+			<string>79 106 1156 772 0 0 1440 878 </string>
 			<key>WindowToolGUID</key>
 			<string>BF94E9DC12B88F4E007B6F99</string>
 			<key>WindowToolIsVisible</key>
@@ -943,7 +942,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

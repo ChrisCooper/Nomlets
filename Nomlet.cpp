@@ -1,5 +1,5 @@
 /*
- *  NonNom.cpp
+ *  Nonlet.cpp
  *  Survival
  *
  *  Created by Chris Cooper on 10-12-14.
@@ -15,7 +15,7 @@
 Nomlet::Nomlet(){
 	location = randomMapLocation();
 	
-	speed = 0.01;//zeroToOneUniform()/10.0f;
+	speed = NOMLET_TOP_SPEED;
 	
 	energy = NOMLET_STARTING_ENERGY;
 	size = sqrt(energy);
@@ -30,10 +30,36 @@ Nomlet::Nomlet(Nomlet &father, Nomlet &mother){
 void Nomlet::eatFoodbit(Foodbit &foodbit){
 }
 
+void Nomlet::accelerate(){
+	speed += NOMLET_ACCELLERATION;
+	speed = min(speed, NOMLET_TOP_SPEED);
+}
+
+void Nomlet::turn(float amount){
+	direction += amount;
+	if (direction > 360){
+		direction -= 360;
+	}
+	if (direction < 0){
+		direction += 360;
+	}
+}
+
 void Nomlet::move(){
 	location.x += speed * cos(degreeToRadian(-direction));
 	location.y += speed * sin(degreeToRadian(-direction));
+	
 	capLocation();
+	
+	speed *= NOMLET_INERTIA;
+}
+
+void Nomlet::eatIfPossible(Foodbit &theFoodbit){
+	
+}
+
+void Nomlet::giveEnergy(double energyGiven){
+	energy += energyGiven;
 }
 
 void Nomlet::capLocation(){
@@ -55,3 +81,6 @@ float Nomlet::getSize(){
 	return size;
 }
 
+double Nomlet::getEnergy(){
+	return energy;
+}

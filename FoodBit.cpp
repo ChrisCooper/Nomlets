@@ -15,7 +15,19 @@ Foodbit::Foodbit(){
 	location = randomMapLocation();
 	
 	energy = rand() % (MAX_FOOD_VALUE - MIN_FOOD_VALUE) + MIN_FOOD_VALUE;
+	evaluateSize();
+}
+
+void Foodbit::evaluateSize(){
 	size = sqrt(energy);
+}
+
+void Foodbit::giveFood(Nomlet &nomlet){
+	float energyGiven = (rand() % (MAX_FOOD_VALUE - MIN_FOOD_VALUE) + MIN_FOOD_VALUE) / AVG_FOOD_BITES;
+	energyGiven = max(energyGiven, 0.0f);
+	energy -= energyGiven;
+	nomlet.giveEnergy(energyGiven);
+	evaluateSize();
 }
 
 float Foodbit::getSize(){

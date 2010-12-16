@@ -48,8 +48,13 @@ extern const int TIME_INTERVAL;
 extern float MAP_SIZE;
 extern int MAX_FOOD_VALUE;
 extern int MIN_FOOD_VALUE;
+extern int AVG_FOOD_BITES;
 extern int NOMLET_STARTING_ENERGY;
-
+extern float NOMLET_TOP_SPEED;
+extern float NOMLET_INERTIA;
+extern float NOMLET_ACCELLERATION;
+extern float NOMLET_TURN_SPEED;
+extern float NOMLET_EATING_RANGE;
 
 //Lighting
 extern GLfloat ambientColor[];

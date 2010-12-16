@@ -1,5 +1,5 @@
 /*
- *  NonNom.h
+ *  Nonlet.h
  *  Survival
  *
  *  Created by Chris Cooper on 10-12-14.
@@ -7,12 +7,15 @@
  *
  */
 
-#include "Logistics.h"
-#include "Foodbit.h"
-
 
 #ifndef _NOMLET_
 #define _NOMLET_
+
+
+#include "Logistics.h"
+#include "Foodbit.h"
+
+class Foodbit;
 
 class Nomlet {
 	
@@ -23,8 +26,13 @@ public:
 	Coordinate getLocation();
 	float getDirection();
 	float getSize();
+	double getEnergy();
 	void move();
 	void capLocation();
+	void accelerate();
+	void turn(float amount);
+	void eatIfPossible(Foodbit &theFoodbit);
+	void giveEnergy(double energyGiven);
 	
 private:
 	Coordinate location;

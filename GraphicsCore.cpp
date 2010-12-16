@@ -53,8 +53,6 @@ void drawNomlets(){
 	glPushMatrix();
 	glTranslatef(0.0f, 0.14f, 0.0f);
 	
-	glColor3fv(nomletColor);
-	
 	for (int i = 0; i < nomlets.size(); i++) {
 		Nomlet &nomlet = nomlets[i];
 		
@@ -64,6 +62,10 @@ void drawNomlets(){
 		
 		float coneHeight = nomlet.getSize()*NOMLET_SIZE*NOMLET_LENGTH;
 		glTranslatef(0.0f, 0.0f, -coneHeight/2);
+		
+		float colorModifier = nomlet.getEnergy() / (MAX_FOOD_VALUE*5);
+		glColor4f(nomletColor[0] * colorModifier, nomletColor[1]*colorModifier, nomletColor[2]*colorModifier, 1.0f);
+		
 		glutSolidCone(nomlet.getSize()*NOMLET_SIZE, coneHeight, 4, 2);
 		
 		glPopMatrix();

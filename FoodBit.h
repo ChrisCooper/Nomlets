@@ -7,11 +7,14 @@
  *
  */
 
-#include "Logistics.h"
-#include <iostream>
-
 #ifndef _FOODBIT_
 #define _FOODBIT_
+
+#include "Logistics.h"
+#include <iostream>
+#include "Nomlet.h"
+
+class Nomlet;
 
 class Foodbit {
 	
@@ -19,6 +22,8 @@ public:
 	Foodbit();
 	float getSize();
 	Coordinate getLocation();
+	void giveFood(Nomlet &nomlet);
+	void evaluateSize();
 	
 private:
 	Coordinate location;

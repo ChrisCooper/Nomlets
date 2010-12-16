@@ -41,7 +41,13 @@ const int TIME_INTERVAL = 25;
 float MAP_SIZE = 10.0f;
 int MAX_FOOD_VALUE = 1500;
 int MIN_FOOD_VALUE = 50;
+int AVG_FOOD_BITES = 10;
 int NOMLET_STARTING_ENERGY = 1000;
+float NOMLET_TOP_SPEED = 0.03f;
+float NOMLET_INERTIA = 0.8f;
+float NOMLET_ACCELLERATION = 0.05f;
+float NOMLET_TURN_SPEED = 5;
+float NOMLET_EATING_RANGE = 0.05;
 
 //Lighting
 GLfloat ambientColor[] = {0.2f, 0.2f, 0.2f, 1.0f};

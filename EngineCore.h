@@ -20,3 +20,4 @@
 void update(int value);
 
 void moveNomlets();
+void evaluateCollisions();

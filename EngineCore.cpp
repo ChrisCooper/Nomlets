@@ -19,6 +19,8 @@ void update(int value) {
 	
 	moveNomlets();
 	
+	evaluateCollisions();
+	
 	glutPostRedisplay();
 	
 	glutTimerFunc(25, update, 0);
@@ -33,5 +35,21 @@ void moveNomlets(){
 		
 		nomlet.move();
 	}
+}
 
+void evaluateCollisions(){
+	vector<Foodbit> &foodbits = manager->getFoodbits();
+	vector<Nomlet> &nomlets = manager->getNomlets();
+	Nomlet &nomlet = nomlets[0];
+	for (int i = 0; i < foodbits.size(); i++) {
+		Foodbit &foodbit = foodbits[i];
+		
+		//Big approximations here...
+		float xD = (foodbit.getLocation().x - nomlet.getLocation().x)*(foodbit.getLocation().x - nomlet.getLocation().x);
+		float yD = (foodbit.getLocation().y - nomlet.getLocation().y)*(foodbit.getLocation().y - nomlet.getLocation().y);
+		float distance = xD+yD;
+		if (distance < NOMLET_EATING_RANGE){
+			foodbit.giveFood(nomlet);
+		}
+	}
 }

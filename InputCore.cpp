@@ -27,6 +27,22 @@ void checkInput(){
 	if (specialKeyDown[GLUT_KEY_DOWN]){
 		zoomCamera(OUT);
 	}
+	
+	//Nomlet control
+	vector<Nomlet> &nomlets = manager->getNomlets();
+	
+	if (nomlets.size() > 0){
+		Nomlet &nomlet = nomlets[0];
+		if(keyDown['w']){
+			nomlet.accelerate();
+		}
+		if(keyDown['a']){
+			nomlet.turn(NOMLET_TURN_SPEED);
+		}
+		if(keyDown['d']){
+			nomlet.turn(-NOMLET_TURN_SPEED);
+		}
+	}
 }
 
 //Called when a key is pressed
