@@ -31,23 +31,58 @@ void drawScene() {
 	addLighting(); 
 	
 	drawObjects();
-	
-	glutSolidTeapot(1.0); 
     
    glutSwapBuffers();
 }
 
 void drawObjects(){
 	
+	drawGround();
+	glTranslatef(0.0f, -1.0f, 0.0f);
+	drawFoodbits();
+//	drawNomlets();
+}
+
+/*void drawNomlets(){
+	vector<Nomlet> &nomlets = manager->getNomlets();
+	glTranslatef(0.0f, -1.0f, 0.0f);
+	
+	glTranslatef(0.0f, 0.14f, 0.0f);
+	
+	for (int i = 0; i < foodbits.size(); i++) {
+		Foodbit &foodbit = foodbits[i];
+		
+		glPushMatrix();
+		glTranslatef(foodbit.getLocation().x, 0.0f, foodbit.getLocation().y);
+		glutSolidSphere(foodbit.getSize()/50, 6, 3);
+		glPopMatrix();
+	}
+}*/
+
+void drawFoodbits(){
+	vector<Foodbit> &foodbits = manager->getFoodbits();
+	
+	glPushMatrix();
+	glTranslatef(0.0f, 0.14f, 0.0f);
+	
+	for (int i = 0; i < foodbits.size(); i++) {
+		Foodbit &foodbit = foodbits[i];
+		
+		glPushMatrix();
+		glTranslatef(foodbit.getLocation().x, 0.0f, foodbit.getLocation().y);
+		glutSolidSphere(foodbit.getSize()*FOODBIT_SIZE, 6, 3);
+		glPopMatrix();
+	}
+	glPopMatrix();
+}
+
+void drawGround(){
 	glPushMatrix();
 	glTranslatef(0.0f, -1.0f, 0.0f);
 	glScalef(MAP_SIZE, 0.1f, MAP_SIZE);
 	glColor3fv(groundColor);
 	glutSolidCube(1.0f);
 	glPopMatrix();
-	
-	glColor3f(1.0f, 1.0f, 1.0f);
-	glutSolidTeapot(1.0); 
 }
 	
 void addLighting(){

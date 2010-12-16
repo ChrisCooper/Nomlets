@@ -1,5 +1,5 @@
 /*
- *  FoodBit.h
+ *  Foodbit.h
  *  Survival
  *
  *  Created by Chris Cooper on 10-12-14.
@@ -8,18 +8,22 @@
  */
 
 #include "Logistics.h"
+#include <iostream>
 
 #ifndef _FOODBIT_
 #define _FOODBIT_
 
-class FoodBit {
+class Foodbit {
 	
 public:
-	FoodBit();
+	Foodbit();
+	float getSize();
+	Coordinate getLocation();
 	
 private:
 	Coordinate location;
 	double energy;
+	float size;
 };
 
 #endif

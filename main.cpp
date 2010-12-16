@@ -14,8 +14,11 @@
 #include "EnvironmentDeclarations.h"
 
 void setHandlers();
+void initializeGameState();
 
 int main(int argc, char** argv) {
+	srand(time(0));
+	
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
     glutInitWindowSize(SCREEN_WIDTH, SCREEN_HEIGHT);
@@ -25,6 +28,8 @@ int main(int argc, char** argv) {
     initRendering();
 	
 	setHandlers();
+	
+	initializeGameState();
 	
     glutTimerFunc(25, update, 0);
 	
@@ -40,4 +45,8 @@ void setHandlers(){
 	glutSpecialUpFunc(handleSpecialKeyUp);
 	glutIgnoreKeyRepeat(true);
 	glutReshapeFunc(handleResize);
+}
+
+void initializeGameState(){
+	manager = new ModelManager();
 }

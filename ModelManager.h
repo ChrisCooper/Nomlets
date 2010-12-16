@@ -13,17 +13,19 @@
 #include <iostream>
 #include <vector>
 #include "Nomlet.h"
-#include "FoodBit.h"
+#include "Foodbit.h"
 
 using namespace std;
 
 class ModelManager {
 	
 public:
-	
+	ModelManager();
+	vector<Foodbit> &getFoodbits();
+	vector<Nomlet> &getNomlets();
 	
 private:
-	vector<FoodBit> foodBits;
+	vector<Foodbit> foodbits;
 	vector<Nomlet> nomlets;
 };
 

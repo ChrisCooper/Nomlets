@@ -26,6 +26,8 @@ using namespace std;
 void initRendering();
 void drawScene();
 void drawObjects();
+void drawFoodbits();
+void drawGround();
 void addLighting();
 void handleResize(int w, int h);
 

@@ -8,7 +8,7 @@
  */
 
 #include "Logistics.h"
-#include "FoodBit.h"
+#include "Foodbit.h"
 
 #ifndef _NOMLET_
 #define _NOMLET_
@@ -18,7 +18,7 @@ class Nomlet {
 public:
 	Nomlet();
 	Nomlet(Nomlet &father, Nomlet &mother);
-	void eatFoodBit(FoodBit &foodBit);
+	void eatFoodbit(Foodbit &foodbit);
 	
 private:
 	Coordinate location;

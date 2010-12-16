@@ -9,6 +9,7 @@
 
 #include <iostream>
 #include <stdlib.h>
+#include "ModelManager.h"
 
 #ifdef __APPLE__
 #include <OpenGL/OpenGL.h>
@@ -29,6 +30,7 @@ extern float cameraAngle;
 extern float cameraAngleSpeed;
 extern float cameraAngleInertia;
 extern float cameraAngleAcceleration;
+extern float cameraIdleSpinSpeed;
 
 extern float cameraDistance;
 extern float cameraDistanceSpeed;
@@ -42,7 +44,10 @@ extern float maximumCameraDistance;
 extern const int SCREEN_WIDTH;
 extern const int SCREEN_HEIGHT;
 extern const int TIME_INTERVAL;
+
 extern float MAP_SIZE;
+extern int MAX_FOOD_VALUE;
+extern int MIN_FOOD_VALUE;
 
 
 //Lighting
@@ -58,6 +63,11 @@ extern bool keyDown[256];
 extern bool specialKeyDown[256];
 
 
-
 //Colors
 extern GLfloat groundColor[4];
+
+//Object Attributes
+extern float FOODBIT_SIZE;
+
+//Game Globals
+extern ModelManager *manager;

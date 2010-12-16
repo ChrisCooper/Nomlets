@@ -20,7 +20,7 @@ void updateCamera(){
 		cameraAngle += 360;
 	}
 	
-	if (abs(cameraAngleSpeed) > 0.05){
+	if (cameraAngleSpeed > cameraIdleSpinSpeed || cameraAngleSpeed < -cameraIdleSpinSpeed){
 		cameraAngleSpeed *= cameraAngleInertia;
 	}
 	
