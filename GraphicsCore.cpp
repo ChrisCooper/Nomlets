@@ -42,7 +42,10 @@ void drawScene() {
 void drawObjects(){
 	
 	drawGround();
+	
+	//Go to the surface
 	glTranslatef(0.0f, -1.0f, 0.0f);
+	
 	drawFoodbits();
 	drawNomlets();
 }
@@ -62,9 +65,15 @@ void drawNomlets(){
 		
 		glTranslatef(0.0f, 0.0f, -NOMLET_LENGTH/2);
 		
-		float colorModifier = nomlet.getEnergy() / (MAX_FOOD_VALUE*5);
-		glColor4f(nomletColor[0] * colorModifier, nomletColor[1]*colorModifier, nomletColor[2]*colorModifier, 1.0f);
+		float colorBias = nomlet.getHealthiness();
 		
+		float red = biasedFloat(nomletHealthyColor[0], nomletDeadColor[0], colorBias);
+		float green = biasedFloat(nomletHealthyColor[1], nomletDeadColor[1], colorBias);
+		float blue = biasedFloat(nomletHealthyColor[2], nomletDeadColor[2], colorBias);
+		
+		glColor4f(red, green, blue, 1.0f);
+		
+		glutSolidSphere(NOMLET_SIZE, 5, 3);
 		glutSolidCone(NOMLET_SIZE, NOMLET_LENGTH, 4, 2);
 		
 		glPopMatrix();

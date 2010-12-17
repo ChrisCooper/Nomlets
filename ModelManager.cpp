@@ -8,14 +8,15 @@
  */
 
 #include "ModelManager.h"
+#include "Environment.h"
 
 ModelManager::ModelManager(){
-	for (int i = 0; i < 200; i++){
+	for (int i = 0; i < INITIAL_FOODBITS; i++){
 		Foodbit *foodbit = new Foodbit();
 		foodbits.push_back(*foodbit);
 	}
 	
-	for (int i = 0; i < 10; i++){
+	for (int i = 0; i < INITIAL_NOMLETS; i++){
 		Nomlet *nomlet = new Nomlet();
 		nomlets.push_back(*nomlet);
 	}

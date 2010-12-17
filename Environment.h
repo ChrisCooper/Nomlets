@@ -45,12 +45,15 @@ extern const int SCREEN_WIDTH;
 extern const int SCREEN_HEIGHT;
 extern const int TIME_INTERVAL;
 
+extern int INITIAL_FOODBITS;
+extern int INITIAL_NOMLETS;
 extern float MAP_SIZE;
 extern int MAX_FOOD_VALUE;
 extern int MIN_FOOD_VALUE;
 extern int AVG_FOOD_BITES;
 
 extern int NOMLET_STARTING_ENERGY;
+extern float NOMLET_HEALTHIEST_ENERGY ;
 extern float NOMLET_TOP_SPEED;
 extern float NOMLET_INERTIA;
 extern float NOMLET_ACCELLERATION;
@@ -74,7 +77,8 @@ extern bool specialKeyDown[256];
 extern GLfloat groundColor[4];
 
 extern GLfloat foodbitColor[4];
-extern GLfloat nomletColor[4];
+extern GLfloat nomletHealthyColor[4];
+extern GLfloat nomletDeadColor[4];
 
 //Object Attributes
 extern float FOODBIT_SIZE;

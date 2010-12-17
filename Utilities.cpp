@@ -9,6 +9,7 @@
 
 #include "Utilities.h"
 #include <iostream>
+#include <math.h>
 
 
 #ifdef __APPLE__
@@ -19,6 +20,8 @@
 #endif 
 
 #define PI 3.14159265f
+
+using namespace std;
 
 float zeroToOneUniform(){
 	return (((float)rand()) / ((float)RAND_MAX + 1));
@@ -57,4 +60,11 @@ void drawAxes (float size)
 	
     glPopMatrix ();
 	glEnable   (GL_LIGHTING);
+}
+
+float biasedFloat(float first, float second, float weightToFirst){
+	//clamp weightToFirst
+	weightToFirst = min(weightToFirst, 1.0f);
+	weightToFirst = max(weightToFirst, 0.0f);
+	return weightToFirst*first + (1.0f - weightToFirst)*second;
 }

@@ -42,7 +42,11 @@ void checkInput(){
 		if(keyDown['d']){
 			nomlet.turn(-NOMLET_TURN_SPEED);
 		}
+		if(keyDown['1']){
+			nomlet.giveEnergy(500);
+		}
 	}
+
 }
 
 //Called when a key is pressed

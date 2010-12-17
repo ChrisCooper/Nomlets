@@ -12,6 +12,8 @@
 #include "Utilities.h"
 #include <math.h>
 
+using namespace std;
+
 Nomlet::Nomlet(){
 	location = randomMapLocation();
 	
@@ -50,14 +52,20 @@ void Nomlet::move(){
 	location.y += speed * sin(degreeToRadian(-direction));
 	
 	energy -= MOVEMENT_COST * (speed/NOMLET_TOP_SPEED);
+	clampEnergy();
 	
 	capLocation();
 	
 	speed *= NOMLET_INERTIA;
+	accelerate();
 }
 
 void Nomlet::giveEnergy(double energyGiven){
 	energy += energyGiven;
+}
+
+void Nomlet::clampEnergy(){
+	energy = max(energy, 0.0);
 }
 
 void Nomlet::capLocation(){
@@ -65,6 +73,10 @@ void Nomlet::capLocation(){
 	location.x = max(location.x, -(MAP_SIZE / 2));
 	location.y = min(location.y, MAP_SIZE / 2);
 	location.y = max(location.y, -(MAP_SIZE / 2));
+}
+
+float Nomlet::getHealthiness(){
+	return min((float)energy/NOMLET_HEALTHIEST_ENERGY, 1.0f);
 }
 
 Coordinate Nomlet::getLocation(){

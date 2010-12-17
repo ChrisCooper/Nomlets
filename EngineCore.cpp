@@ -21,6 +21,8 @@ void update(int value) {
 	
 	evaluateCollisions();
 	
+	
+	//cullObjects();
 	glutPostRedisplay();
 	
 	glutTimerFunc(25, update, 0);
@@ -40,16 +42,21 @@ void moveNomlets(){
 void evaluateCollisions(){
 	vector<Foodbit> &foodbits = manager->getFoodbits();
 	vector<Nomlet> &nomlets = manager->getNomlets();
-	Nomlet &nomlet = nomlets[0];
-	for (int i = 0; i < foodbits.size(); i++) {
-		Foodbit &foodbit = foodbits[i];
-		
-		//Big approximations here...
-		float xD = (foodbit.getLocation().x - nomlet.getLocation().x)*(foodbit.getLocation().x - nomlet.getLocation().x);
-		float yD = (foodbit.getLocation().y - nomlet.getLocation().y)*(foodbit.getLocation().y - nomlet.getLocation().y);
-		float distance = xD+yD;
-		if (distance < NOMLET_EATING_RANGE){
-			foodbit.giveFood(nomlet);
+	
+	//This can be improved from O(N*F).
+	//Look into using a quadtree.
+	for (int i = 0; i < nomlets.size(); i++){
+		Nomlet &nomlet = nomlets[i];
+		for (int j = 0; j < foodbits.size(); j++) {
+			Foodbit &foodbit = foodbits[j];
+			
+			//Big approximations here...
+			float xD = (foodbit.getLocation().x - nomlet.getLocation().x)*(foodbit.getLocation().x - nomlet.getLocation().x);
+			float yD = (foodbit.getLocation().y - nomlet.getLocation().y)*(foodbit.getLocation().y - nomlet.getLocation().y);
+			float distance = xD+yD;
+			if (distance < NOMLET_EATING_RANGE){
+				foodbit.giveFood(nomlet);
+			}
 		}
 	}
 }

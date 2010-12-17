@@ -13,3 +13,4 @@ float degreeToRadian(float degree);
 
 void drawAxes (float size);
 
+float biasedFloat(float first, float second, float weightToFirst);

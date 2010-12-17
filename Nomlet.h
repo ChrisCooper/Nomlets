@@ -32,6 +32,8 @@ public:
 	void accelerate();
 	void turn(float amount);
 	void giveEnergy(double energyGiven);
+	float getHealthiness();
+	void clampEnergy();
 	
 private:
 	Coordinate location;

@@ -38,11 +38,14 @@ const int SCREEN_WIDTH = 1200;
 const int SCREEN_HEIGHT = 800;
 const int TIME_INTERVAL = 25;
 
+int INITIAL_FOODBITS = 50;
+int INITIAL_NOMLETS = 20;
 float MAP_SIZE = 10.0f;
 int MAX_FOOD_VALUE = 1500;
 int MIN_FOOD_VALUE = 50;
 int AVG_FOOD_BITES = 10;
 int NOMLET_STARTING_ENERGY = MAX_FOOD_VALUE*3;
+float NOMLET_HEALTHIEST_ENERGY = MAX_FOOD_VALUE*15;
 float NOMLET_TOP_SPEED = 0.03f;
 float NOMLET_INERTIA = 0.8f;
 float NOMLET_ACCELLERATION = 0.05f;
@@ -50,7 +53,7 @@ float NOMLET_TURN_SPEED = 5;
 float NOMLET_EATING_RANGE = 0.05;
 
 //Lighting
-GLfloat ambientColor[] = {0.2f, 0.2f, 0.2f, 1.0f};
+GLfloat ambientColor[] = {0.3f, 0.3f, 0.3f, 1.0f};
 GLfloat positionedLightColor[] = {0.5f, 0.5f, 0.5f, 1.0f}; 
 GLfloat positionedLightPosition[] = {4.0f, 0.0f, 8.0f, 1.0f};
 GLfloat directedLightColor[] = {0.5f, 0.2f, 0.2f, 1.0f}; 
@@ -65,7 +68,8 @@ bool specialKeyDown[256];
 //Colors
 GLfloat groundColor[4] = {0.1f, 0.4f, 0.1f, 1.0f};
 GLfloat foodbitColor[4] = {0.7f, 0.7f, 0.0f, 1.0f};
-GLfloat nomletColor[4] = {0.3f, 0.3f, 1.0f, 1.0f};
+GLfloat nomletHealthyColor[4] = {0.9f, 0.9f, 15.0f, 1.0f};
+GLfloat nomletDeadColor[4] = {0.7f, 0.1f, 0.0f, 1.0f};
 
 //Object Attributes
 float FOODBIT_SIZE = 0.002f;
