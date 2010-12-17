@@ -82,4 +82,4 @@ ModelManager *manager = NULL;
 
 
 //Costs
-float MOVEMENT_COST = 20.0f;
+float MOVEMENT_COST = 10.0f;

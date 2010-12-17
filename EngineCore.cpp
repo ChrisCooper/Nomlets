@@ -21,8 +21,9 @@ void update(int value) {
 	
 	evaluateCollisions();
 	
+	cullFoodbits();
+	cullNomlets();
 	
-	//cullObjects();
 	glutPostRedisplay();
 	
 	glutTimerFunc(25, update, 0);
@@ -36,6 +37,33 @@ void moveNomlets(){
 		Nomlet &nomlet = nomlets[i];
 		
 		nomlet.move();
+	}
+}
+
+void cullFoodbits(){
+	vector<Foodbit> &foodbits = manager->getFoodbits();
+	
+	for (int i = 0; i < foodbits.size(); i++) {
+		Foodbit &foodbit = foodbits[i];
+		
+		if (foodbit.getSize() <= 0.0f) {
+			foodbits.erase(foodbits.begin()+i);
+			Foodbit *foodbit = new Foodbit();
+			foodbits.push_back(*foodbit);
+
+		}
+	}
+}
+
+void cullNomlets(){
+	vector<Nomlet> &nomlets = manager->getNomlets();
+	
+	for (int i = 0; i < nomlets.size(); i++) {
+		Nomlet &nomlet = nomlets[i];
+		
+		if (nomlet.getHealthiness() <= 0.0f) {
+			nomlets.erase(nomlets.begin()+i);
+		}
 	}
 }
 

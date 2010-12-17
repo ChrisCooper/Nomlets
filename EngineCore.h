@@ -21,3 +21,5 @@ void update(int value);
 
 void moveNomlets();
 void evaluateCollisions();
+void cullFoodbits();
+void cullNomlets();
