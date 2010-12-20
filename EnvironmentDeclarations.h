@@ -51,6 +51,7 @@ float NOMLET_INERTIA = 0.8f;
 float NOMLET_ACCELLERATION = 0.05f;
 float NOMLET_TURN_SPEED = 5;
 float NOMLET_EATING_RANGE = 0.05;
+double SIGMOID_CURVE_FLATNESS = 1.0;
 
 //Lighting
 GLfloat ambientColor[] = {0.3f, 0.3f, 0.3f, 1.0f};

@@ -59,6 +59,7 @@ extern float NOMLET_INERTIA;
 extern float NOMLET_ACCELLERATION;
 extern float NOMLET_TURN_SPEED;
 extern float NOMLET_EATING_RANGE;
+extern double SIGMOID_CURVE_FLATNESS;
 
 //Lighting
 extern GLfloat ambientColor[];

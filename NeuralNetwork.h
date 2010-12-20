@@ -10,6 +10,7 @@
 #include <iostream>
 #include <vector>
 #include "NeuronLayer.h"
+#include "Environment.h"
 
 class NeuralNet {
 	
@@ -33,6 +34,6 @@ public:
 	int getNumWeights();
 	void setWeights(vector<double> &weights);
 	
-	vector<double> &Update(vector<double> &inputs);
+	vector<double> Update(vector<double> &inputs);
 	
 };

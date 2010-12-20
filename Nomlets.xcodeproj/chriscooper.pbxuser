@@ -101,6 +101,26 @@
 			BF3423C212BEF06C008D9641 /* PBXTextBookmark */ = BF3423C212BEF06C008D9641 /* PBXTextBookmark */;
 			BF3423C312BEF06C008D9641 /* PBXTextBookmark */ = BF3423C312BEF06C008D9641 /* PBXTextBookmark */;
 			BF3423CE12BEF14D008D9641 /* PBXTextBookmark */ = BF3423CE12BEF14D008D9641 /* PBXTextBookmark */;
+			BF3423CF12BEF41C008D9641 /* PBXTextBookmark */ = BF3423CF12BEF41C008D9641 /* PBXTextBookmark */;
+			BF3423DE12BF0FF8008D9641 /* PBXTextBookmark */ = BF3423DE12BF0FF8008D9641 /* PBXTextBookmark */;
+			BF3423DF12BF0FF8008D9641 /* PBXTextBookmark */ = BF3423DF12BF0FF8008D9641 /* PBXTextBookmark */;
+			BF3423E012BF0FF8008D9641 /* PBXTextBookmark */ = BF3423E012BF0FF8008D9641 /* PBXTextBookmark */;
+			BF3423ED12BF111E008D9641 /* PBXTextBookmark */ = BF3423ED12BF111E008D9641 /* PBXTextBookmark */;
+			BF3423F212BF1726008D9641 /* PBXTextBookmark */ = BF3423F212BF1726008D9641 /* PBXTextBookmark */;
+			BF3423F312BF1E07008D9641 /* PBXTextBookmark */ = BF3423F312BF1E07008D9641 /* PBXTextBookmark */;
+			BF3423F412BF1E07008D9641 /* PBXTextBookmark */ = BF3423F412BF1E07008D9641 /* PBXTextBookmark */;
+			BF3423F512BF1E07008D9641 /* PBXTextBookmark */ = BF3423F512BF1E07008D9641 /* PBXTextBookmark */;
+			BF3423F612BF1E07008D9641 /* PBXTextBookmark */ = BF3423F612BF1E07008D9641 /* PBXTextBookmark */;
+			BF3423F712BF1E2C008D9641 /* PBXTextBookmark */ = BF3423F712BF1E2C008D9641 /* PBXTextBookmark */;
+			BF3423F812BF1E55008D9641 /* PBXTextBookmark */ = BF3423F812BF1E55008D9641 /* PBXTextBookmark */;
+			BF34240512BF1F47008D9641 /* PBXTextBookmark */ = BF34240512BF1F47008D9641 /* PBXTextBookmark */;
+			BF34240812BF1F5A008D9641 /* PBXTextBookmark */ = BF34240812BF1F5A008D9641 /* PBXTextBookmark */;
+			BF34240912BF1F5A008D9641 /* PBXTextBookmark */ = BF34240912BF1F5A008D9641 /* PBXTextBookmark */;
+			BF34240A12BF1F5A008D9641 /* PBXTextBookmark */ = BF34240A12BF1F5A008D9641 /* PBXTextBookmark */;
+			BF34240B12BF1F5A008D9641 /* PBXTextBookmark */ = BF34240B12BF1F5A008D9641 /* PBXTextBookmark */;
+			BF34240C12BF1F5A008D9641 /* PBXTextBookmark */ = BF34240C12BF1F5A008D9641 /* PBXTextBookmark */;
+			BF34240D12BF1F5A008D9641 /* PBXTextBookmark */ = BF34240D12BF1F5A008D9641 /* PBXTextBookmark */;
+			BF34240E12BF1F5A008D9641 /* PBXTextBookmark */ = BF34240E12BF1F5A008D9641 /* PBXTextBookmark */;
 			BF8415D212BB216A000A9745 = BF8415D212BB216A000A9745 /* PBXTextBookmark */;
 			BF8415D512BB216A000A9745 = BF8415D512BB216A000A9745 /* PBXTextBookmark */;
 			BF8415EB12BB2524000A9745 = BF8415EB12BB2524000A9745 /* PBXTextBookmark */;
@@ -183,15 +203,15 @@
 	BF2AE04E12BDAE23001E3862 /* NeuralNetwork.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1170, 741}}";
-			sepNavSelRange = "{608, 0}";
-			sepNavVisRange = "{0, 707}";
+			sepNavSelRange = "{460, 0}";
+			sepNavVisRange = "{0, 731}";
 		};
 	};
 	BF2AE04F12BDAE23001E3862 /* NeuralNetwork.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1170, 1248}}";
-			sepNavSelRange = "{2013, 0}";
-			sepNavVisRange = "{941, 1162}";
+			sepNavIntBoundsRect = "{{0, 0}, {1170, 1937}}";
+			sepNavSelRange = "{192, 0}";
+			sepNavVisRange = "{2074, 1016}";
 		};
 	};
 	BF2AE05212BDAEE7001E3862 /* PBXTextBookmark */ = {
@@ -289,7 +309,7 @@
 		fRef = BF2AE04E12BDAE23001E3862 /* NeuralNetwork.h */;
 		name = "NeuralNetwork.h: 27";
 		rLen = 0;
-		rLoc = 550;
+		rLoc = 575;
 		rType = 0;
 		vrLen = 652;
 		vrLoc = 0;
@@ -299,7 +319,7 @@
 		fRef = BF2AE04F12BDAE23001E3862 /* NeuralNetwork.cpp */;
 		name = "NeuralNetwork.cpp: 19";
 		rLen = 11;
-		rLoc = 463;
+		rLoc = 504;
 		rType = 0;
 		vrLen = 1191;
 		vrLoc = 0;
@@ -309,7 +329,7 @@
 		fRef = BF2AE04F12BDAE23001E3862 /* NeuralNetwork.cpp */;
 		name = "NeuralNetwork.cpp: 32";
 		rLen = 0;
-		rLoc = 843;
+		rLoc = 884;
 		rType = 0;
 		vrLen = 1175;
 		vrLoc = 277;
@@ -319,7 +339,7 @@
 		fRef = BF2AE04F12BDAE23001E3862 /* NeuralNetwork.cpp */;
 		name = "NeuralNetwork.cpp: 32";
 		rLen = 0;
-		rLoc = 843;
+		rLoc = 884;
 		rType = 0;
 		vrLen = 1171;
 		vrLoc = 277;
@@ -359,7 +379,7 @@
 		fRef = BF2AE04E12BDAE23001E3862 /* NeuralNetwork.h */;
 		name = "NeuralNetwork.h: 20";
 		rLen = 0;
-		rLoc = 316;
+		rLoc = 341;
 		rType = 0;
 		vrLen = 701;
 		vrLoc = 0;
@@ -369,7 +389,7 @@
 		fRef = BF2AE04F12BDAE23001E3862 /* NeuralNetwork.cpp */;
 		name = "NeuralNetwork.cpp: 67";
 		rLen = 0;
-		rLoc = 1600;
+		rLoc = 1641;
 		rType = 0;
 		vrLen = 1106;
 		vrLoc = 857;
@@ -379,7 +399,7 @@
 		fRef = BF2AE04F12BDAE23001E3862 /* NeuralNetwork.cpp */;
 		name = "NeuralNetwork.cpp: 67";
 		rLen = 0;
-		rLoc = 1580;
+		rLoc = 1621;
 		rType = 0;
 		vrLen = 1113;
 		vrLoc = 857;
@@ -389,7 +409,7 @@
 		fRef = BF2AE04E12BDAE23001E3862 /* NeuralNetwork.h */;
 		name = "NeuralNetwork.h: 25";
 		rLen = 0;
-		rLoc = 425;
+		rLoc = 450;
 		rType = 0;
 		vrLen = 707;
 		vrLoc = 0;
@@ -399,7 +419,7 @@
 		fRef = BF2AE04F12BDAE23001E3862 /* NeuralNetwork.cpp */;
 		name = "NeuralNetwork.cpp: 66";
 		rLen = 0;
-		rLoc = 1551;
+		rLoc = 1592;
 		rType = 0;
 		vrLen = 1195;
 		vrLoc = 450;
@@ -409,7 +429,7 @@
 		fRef = BF2AE04F12BDAE23001E3862 /* NeuralNetwork.cpp */;
 		name = "NeuralNetwork.cpp: 18";
 		rLen = 0;
-		rLoc = 443;
+		rLoc = 484;
 		rType = 0;
 		vrLen = 1239;
 		vrLoc = 0;
@@ -478,7 +498,7 @@
 		fRef = BF2AE04E12BDAE23001E3862 /* NeuralNetwork.h */;
 		name = "NeuralNetwork.h: 33";
 		rLen = 0;
-		rLoc = 608;
+		rLoc = 633;
 		rType = 0;
 		vrLen = 707;
 		vrLoc = 0;
@@ -488,7 +508,7 @@
 		fRef = BF2AE04F12BDAE23001E3862 /* NeuralNetwork.cpp */;
 		name = "NeuralNetwork.cpp: 83";
 		rLen = 0;
-		rLoc = 2020;
+		rLoc = 2080;
 		rType = 0;
 		vrLen = 1337;
 		vrLoc = 0;
@@ -498,7 +518,7 @@
 		fRef = BF2AE04F12BDAE23001E3862 /* NeuralNetwork.cpp */;
 		name = "NeuralNetwork.cpp: 26";
 		rLen = 0;
-		rLoc = 592;
+		rLoc = 633;
 		rType = 0;
 		vrLen = 1341;
 		vrLoc = 170;
@@ -508,7 +528,7 @@
 		fRef = BF2AE04E12BDAE23001E3862 /* NeuralNetwork.h */;
 		name = "NeuralNetwork.h: 33";
 		rLen = 0;
-		rLoc = 608;
+		rLoc = 633;
 		rType = 0;
 		vrLen = 707;
 		vrLoc = 0;
@@ -518,7 +538,7 @@
 		fRef = BF2AE04F12BDAE23001E3862 /* NeuralNetwork.cpp */;
 		name = "NeuralNetwork.cpp: 57";
 		rLen = 0;
-		rLoc = 1376;
+		rLoc = 1417;
 		rType = 0;
 		vrLen = 1186;
 		vrLoc = 446;
@@ -588,7 +608,7 @@
 		fRef = BF2AE04E12BDAE23001E3862 /* NeuralNetwork.h */;
 		name = "NeuralNetwork.h: 33";
 		rLen = 0;
-		rLoc = 608;
+		rLoc = 633;
 		rType = 0;
 		vrLen = 707;
 		vrLoc = 0;
@@ -598,7 +618,7 @@
 		fRef = BF2AE04F12BDAE23001E3862 /* NeuralNetwork.cpp */;
 		name = "NeuralNetwork.cpp: 57";
 		rLen = 0;
-		rLoc = 1392;
+		rLoc = 1433;
 		rType = 0;
 		vrLen = 1206;
 		vrLoc = 544;
@@ -608,7 +628,7 @@
 		fRef = BF2AE04F12BDAE23001E3862 /* NeuralNetwork.cpp */;
 		name = "NeuralNetwork.cpp: 57";
 		rLen = 0;
-		rLoc = 1392;
+		rLoc = 1433;
 		rType = 0;
 		vrLen = 1210;
 		vrLoc = 544;
@@ -638,7 +658,7 @@
 		fRef = BF2AE04E12BDAE23001E3862 /* NeuralNetwork.h */;
 		name = "NeuralNetwork.h: 33";
 		rLen = 0;
-		rLoc = 608;
+		rLoc = 633;
 		rType = 0;
 		vrLen = 707;
 		vrLoc = 0;
@@ -648,7 +668,7 @@
 		fRef = BF2AE04F12BDAE23001E3862 /* NeuralNetwork.cpp */;
 		name = "NeuralNetwork.cpp: 57";
 		rLen = 0;
-		rLoc = 1392;
+		rLoc = 1433;
 		rType = 0;
 		vrLen = 1210;
 		vrLoc = 544;
@@ -658,7 +678,7 @@
 		fRef = BF2AE04F12BDAE23001E3862 /* NeuralNetwork.cpp */;
 		name = "NeuralNetwork.cpp: 51";
 		rLen = 1;
-		rLoc = 1209;
+		rLoc = 1250;
 		rType = 0;
 		vrLen = 1160;
 		vrLoc = 544;
@@ -668,7 +688,7 @@
 		fRef = BF2AE04F12BDAE23001E3862 /* NeuralNetwork.cpp */;
 		name = "NeuralNetwork.cpp: 59";
 		rLen = 0;
-		rLoc = 1483;
+		rLoc = 1524;
 		rType = 0;
 		vrLen = 1094;
 		vrLoc = 832;
@@ -678,7 +698,7 @@
 		fRef = BF2AE04F12BDAE23001E3862 /* NeuralNetwork.cpp */;
 		name = "NeuralNetwork.cpp: 92";
 		rLen = 0;
-		rLoc = 2020;
+		rLoc = 2080;
 		rType = 0;
 		vrLen = 1198;
 		vrLoc = 1162;
@@ -747,7 +767,7 @@
 		fRef = BF2AE04F12BDAE23001E3862 /* NeuralNetwork.cpp */;
 		name = "NeuralNetwork.cpp: 92";
 		rLen = 0;
-		rLoc = 2020;
+		rLoc = 2080;
 		rType = 0;
 		vrLen = 1198;
 		vrLoc = 1162;
@@ -757,7 +777,7 @@
 		fRef = BF2AE04F12BDAE23001E3862 /* NeuralNetwork.cpp */;
 		name = "NeuralNetwork.cpp: 73";
 		rLen = 0;
-		rLoc = 1636;
+		rLoc = 1677;
 		rType = 0;
 		vrLen = 1159;
 		vrLoc = 941;
@@ -767,10 +787,210 @@
 		fRef = BF2AE04F12BDAE23001E3862 /* NeuralNetwork.cpp */;
 		name = "NeuralNetwork.cpp: 88";
 		rLen = 0;
-		rLoc = 2013;
+		rLoc = 2073;
 		rType = 0;
 		vrLen = 1162;
 		vrLoc = 941;
+	};
+	BF3423CF12BEF41C008D9641 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BF2AE04F12BDAE23001E3862 /* NeuralNetwork.cpp */;
+		name = "NeuralNetwork.cpp: 86";
+		rLen = 96;
+		rLoc = 1977;
+		rType = 0;
+		vrLen = 1150;
+		vrLoc = 949;
+	};
+	BF3423DE12BF0FF8008D9641 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BF2AE04E12BDAE23001E3862 /* NeuralNetwork.h */;
+		name = "NeuralNetwork.h: 36";
+		rLen = 0;
+		rLoc = 695;
+		rType = 0;
+		vrLen = 706;
+		vrLoc = 0;
+	};
+	BF3423DF12BF0FF8008D9641 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BF2AE04F12BDAE23001E3862 /* NeuralNetwork.cpp */;
+		name = "NeuralNetwork.cpp: 96";
+		rLen = 0;
+		rLoc = 2099;
+		rType = 0;
+		vrLen = 1202;
+		vrLoc = 1516;
+	};
+	BF3423E012BF0FF8008D9641 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BF2AE04F12BDAE23001E3862 /* NeuralNetwork.cpp */;
+		name = "NeuralNetwork.cpp: 119";
+		rLen = 0;
+		rLoc = 2565;
+		rType = 0;
+		vrLen = 1143;
+		vrLoc = 2051;
+	};
+	BF3423ED12BF111E008D9641 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BF2AE04F12BDAE23001E3862 /* NeuralNetwork.cpp */;
+		name = "NeuralNetwork.cpp: 132";
+		rLen = 0;
+		rLoc = 2791;
+		rType = 0;
+		vrLen = 1146;
+		vrLoc = 2051;
+	};
+	BF3423F212BF1726008D9641 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BF2AE04F12BDAE23001E3862 /* NeuralNetwork.cpp */;
+		name = "NeuralNetwork.cpp: 136";
+		rLen = 0;
+		rLoc = 2881;
+		rType = 0;
+		vrLen = 1124;
+		vrLoc = 2051;
+	};
+	BF3423F312BF1E07008D9641 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BFD2417312B9D33400911FC3 /* Utilities.h */;
+		name = "Utilities.h: 18";
+		rLen = 0;
+		rLoc = 347;
+		rType = 0;
+		vrLen = 347;
+		vrLoc = 0;
+	};
+	BF3423F412BF1E07008D9641 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BFD2417412B9D33400911FC3 /* Utilities.cpp */;
+		name = "Utilities.cpp: 64";
+		rLen = 0;
+		rLoc = 1233;
+		rType = 0;
+		vrLen = 1277;
+		vrLoc = 304;
+	};
+	BF3423F512BF1E07008D9641 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BF2AE04F12BDAE23001E3862 /* NeuralNetwork.cpp */;
+		name = "NeuralNetwork.cpp: 133";
+		rLen = 0;
+		rLoc = 2849;
+		rType = 0;
+		vrLen = 1026;
+		vrLoc = 2055;
+	};
+	BF3423F612BF1E07008D9641 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BF2AE04F12BDAE23001E3862 /* NeuralNetwork.cpp */;
+		name = "NeuralNetwork.cpp: 140";
+		rLen = 0;
+		rLoc = 3012;
+		rType = 0;
+		vrLen = 1019;
+		vrLoc = 2051;
+	};
+	BF3423F712BF1E2C008D9641 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BF2AE04F12BDAE23001E3862 /* NeuralNetwork.cpp */;
+		name = "NeuralNetwork.cpp: 140";
+		rLen = 0;
+		rLoc = 3038;
+		rType = 0;
+		vrLen = 1039;
+		vrLoc = 2051;
+	};
+	BF3423F812BF1E55008D9641 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BF2AE04F12BDAE23001E3862 /* NeuralNetwork.cpp */;
+		name = "NeuralNetwork.cpp: 140";
+		rLen = 0;
+		rLoc = 3035;
+		rType = 0;
+		vrLen = 992;
+		vrLoc = 2051;
+	};
+	BF34240512BF1F47008D9641 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BF8415F812BB25CE000A9745 /* Neuron.cpp */;
+		name = "Neuron.cpp: 18";
+		rLen = 0;
+		rLoc = 302;
+		rType = 0;
+		vrLen = 695;
+		vrLoc = 3;
+	};
+	BF34240812BF1F5A008D9641 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BFD2417312B9D33400911FC3 /* Utilities.h */;
+		name = "Utilities.h: 18";
+		rLen = 0;
+		rLoc = 306;
+		rType = 0;
+		vrLen = 347;
+		vrLoc = 0;
+	};
+	BF34240912BF1F5A008D9641 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BFD2417412B9D33400911FC3 /* Utilities.cpp */;
+		name = "Utilities.cpp: 72";
+		rLen = 7;
+		rLoc = 1481;
+		rType = 0;
+		vrLen = 1277;
+		vrLoc = 304;
+	};
+	BF34240A12BF1F5A008D9641 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BF94EA6012B8A76F007B6F99 /* EnvironmentDeclarations.h */;
+		name = "EnvironmentDeclarations.h: 54";
+		rLen = 0;
+		rLoc = 1267;
+		rType = 0;
+		vrLen = 1452;
+		vrLoc = 150;
+	};
+	BF34240B12BF1F5A008D9641 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BF2AE04E12BDAE23001E3862 /* NeuralNetwork.h */;
+		name = "NeuralNetwork.h: 28";
+		rLen = 0;
+		rLoc = 460;
+		rType = 0;
+		vrLen = 731;
+		vrLoc = 0;
+	};
+	BF34240C12BF1F5A008D9641 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BF2AE04F12BDAE23001E3862 /* NeuralNetwork.cpp */;
+		name = "NeuralNetwork.cpp: 11";
+		rLen = 0;
+		rLoc = 192;
+		rType = 0;
+		vrLen = 1016;
+		vrLoc = 2074;
+	};
+	BF34240D12BF1F5A008D9641 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BF94EAAB12B8ADEA007B6F99 /* Environment.h */;
+		name = "Environment.h: 62";
+		rLen = 0;
+		rLoc = 1291;
+		rType = 0;
+		vrLen = 1401;
+		vrLoc = 453;
+	};
+	BF34240E12BF1F5A008D9641 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = BF94EAAB12B8ADEA007B6F99 /* Environment.h */;
+		name = "Environment.h: 62";
+		rLen = 0;
+		rLoc = 1291;
+		rType = 0;
+		vrLen = 1367;
+		vrLoc = 453;
 	};
 	BF8415D212BB216A000A9745 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -822,7 +1042,7 @@
 	BF8415F812BB25CE000A9745 /* Neuron.cpp */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1095, 494}}";
-			sepNavSelRange = "{434, 0}";
+			sepNavSelRange = "{302, 0}";
 			sepNavVisRange = "{3, 695}";
 			sepNavWindowFrame = "{{15, 134}, {1073, 739}}";
 		};
@@ -915,9 +1135,9 @@
 	};
 	BF94EA6012B8A76F007B6F99 /* EnvironmentDeclarations.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1170, 1144}}";
-			sepNavSelRange = "{891, 0}";
-			sepNavVisRange = "{594, 1478}";
+			sepNavIntBoundsRect = "{{0, 0}, {1170, 1157}}";
+			sepNavSelRange = "{1267, 0}";
+			sepNavVisRange = "{150, 1452}";
 		};
 	};
 	BF94EA8F12B8AB76007B6F99 /* EngineCore.h */ = {
@@ -936,9 +1156,9 @@
 	};
 	BF94EAAB12B8ADEA007B6F99 /* Environment.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1170, 1287}}";
-			sepNavSelRange = "{1879, 11}";
-			sepNavVisRange = "{666, 1254}";
+			sepNavIntBoundsRect = "{{0, 0}, {1170, 1248}}";
+			sepNavSelRange = "{1291, 0}";
+			sepNavVisRange = "{453, 1367}";
 			sepNavWindowFrame = "{{38, 113}, {1073, 739}}";
 		};
 	};
@@ -957,7 +1177,7 @@
 		fRef = BF94EAAB12B8ADEA007B6F99 /* Environment.h */;
 		name = "Environment.h: 94";
 		rLen = 11;
-		rLoc = 1879;
+		rLoc = 1917;
 		rType = 0;
 		vrLen = 1254;
 		vrLoc = 666;
@@ -1025,14 +1245,14 @@
 	BFD2417312B9D33400911FC3 /* Utilities.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1170, 741}}";
-			sepNavSelRange = "{347, 0}";
+			sepNavSelRange = "{306, 0}";
 			sepNavVisRange = "{0, 347}";
 		};
 	};
 	BFD2417412B9D33400911FC3 /* Utilities.cpp */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1170, 1001}}";
-			sepNavSelRange = "{1233, 0}";
+			sepNavSelRange = "{1481, 7}";
 			sepNavVisRange = "{304, 1277}";
 		};
 	};

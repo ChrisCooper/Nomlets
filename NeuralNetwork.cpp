@@ -8,6 +8,7 @@
  */
 
 #include "NeuralNetwork.h"
+#include "Utilities.h"
 
 NeuralNet::NeuralNet(int _numInputs, int _numOutputs, int _numHiddenLayers, int _neuronsPerHiddenLayer) {
 	numInputs = _numInputs;
@@ -16,6 +17,8 @@ NeuralNet::NeuralNet(int _numInputs, int _numOutputs, int _numHiddenLayers, int 
 	neuronsPerHiddenLayer = _neuronsPerHiddenLayer;
 	
 	weightsNeedsUpdate = true;
+	
+	fillNetwork();
 }
 
 void NeuralNet::fillNetwork(){
@@ -85,11 +88,61 @@ void NeuralNet::setWeights(vector<double> &weights){
 			//Weights
 			for (int k = 0; k < actualWeights.size(); k++){
 				actualWeights[k] = weights[weightIndex];
+				weightIndex++;
 			}
 		}
 	}
 }
 
-vector<double> &NeuralNet::Update(vector<double> &inputs){
-	return weights;;
+vector<double> NeuralNet::Update(vector<double> &inputs){
+	//stores the resultant outputs from each layer
+	vector<double> outputs;
+	
+	int inputIndex = 0;
+	
+	//Confirm input size
+	if (inputs.size() != numInputs) {
+		return outputs;
+	}
+	
+	//Layers
+	for (int i = 0; i < numHiddenLayers + 1; i++) {
+		
+		if ( i > 0 ) {
+			inputs = outputs;
+		}
+		
+		outputs.clear();
+		
+		inputIndex = 0;
+		
+		vector<Neuron> neurons = layers[i].getNeurons();
+		
+		//Neurons
+		for (int j = 0; j < neurons.size(); j++) {
+			
+			double netInput = 0;
+			
+			int	numInputs = neurons[j].getNumInputs();
+			
+			vector<double> weights = neurons[j].getWeights();
+			
+			//Weights
+			for (int k = 0; k < numInputs - 1; k++) {
+				
+				netInput += weights[k] * inputs[inputIndex];
+				inputIndex++;
+			}
+			
+			//Subtract the bias
+			netInput -= weights[numInputs-1];
+			
+			//Put activation value through Sigmoid function
+			outputs.push_back(sigmoid(netInput, SIGMOID_CURVE_FLATNESS));
+			
+			inputIndex = 0;
+		}
+	}
+	
+	return outputs;
 }

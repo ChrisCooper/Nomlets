@@ -15,4 +15,4 @@ void drawAxes (float size);
 
 float biasedFloat(float first, float second, float weightToFirst);
 
-double Sigmoid(double netinput, double response);
+double sigmoid(double netinput, double response);

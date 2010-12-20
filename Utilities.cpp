@@ -69,7 +69,7 @@ float biasedFloat(float first, float second, float weightToFirst){
 	return weightToFirst*first + (1.0f - weightToFirst)*second;
 }
 
-double Sigmoid(double netinput, double response){
+double sigmoid(double netinput, double response){
 	return ( 1.0 / ( 1.0 + exp(-netinput / response)));
 }
 
