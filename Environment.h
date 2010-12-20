@@ -43,7 +43,7 @@ extern float maximumCameraDistance;
 //Game configuration
 extern const int SCREEN_WIDTH;
 extern const int SCREEN_HEIGHT;
-extern const int TIME_INTERVAL;
+extern int TIME_INTERVAL;
 
 extern int INITIAL_FOODBITS;
 extern int INITIAL_NOMLETS;

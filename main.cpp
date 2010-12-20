@@ -15,6 +15,10 @@
 #include "EngineCore.h"
 #include "EnvironmentDeclarations.h"
 
+
+
+#include "NeuralNetwork.h"
+
 void setHandlers();
 void initializeGameState();
 
@@ -36,6 +40,7 @@ int main(int argc, char** argv) {
     glutTimerFunc(25, update, 0);
 	
     glutMainLoop();
+	
     return 0;
 }
 

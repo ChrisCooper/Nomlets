@@ -12,7 +12,7 @@
 #include "NeuronLayer.h"
 #include "Environment.h"
 
-class NeuralNet {
+class NeuralNetwork {
 	
 private:
 	int numInputs;
@@ -26,7 +26,7 @@ private:
 	bool weightsNeedsUpdate;
 	
 public:
-	NeuralNet(int _numInputs, int _numOutputs, int _numHiddenLayers, int _neuronsPerHiddenLayer);
+	NeuralNetwork(int _numInputs, int _numOutputs, int _numHiddenLayers, int _neuronsPerHiddenLayer);
 	
 	void fillNetwork();
 	
@@ -34,6 +34,8 @@ public:
 	int getNumWeights();
 	void setWeights(vector<double> &weights);
 	
-	vector<double> Update(vector<double> &inputs);
+	vector<double> update(vector<double> &inputs);
 	
+	void describeNetwork();
+	void showUpdateResults(vector<double> inputs);
 };

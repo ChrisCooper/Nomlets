@@ -10,9 +10,9 @@
 #include "NeuralNetwork.h"
 #include "Utilities.h"
 
-NeuralNet::NeuralNet(int _numInputs, int _numOutputs, int _numHiddenLayers, int _neuronsPerHiddenLayer) {
+NeuralNetwork::NeuralNetwork(int _numInputs, int _numOutputs, int _numHiddenLayers, int _neuronsPerHiddenLayer) {
 	numInputs = _numInputs;
-	numOutputs = numOutputs;
+	numOutputs = _numOutputs;
 	numHiddenLayers = _numHiddenLayers;
 	neuronsPerHiddenLayer = _neuronsPerHiddenLayer;
 	
@@ -21,7 +21,7 @@ NeuralNet::NeuralNet(int _numInputs, int _numOutputs, int _numHiddenLayers, int 
 	fillNetwork();
 }
 
-void NeuralNet::fillNetwork(){
+void NeuralNetwork::fillNetwork(){
 	
 	//Create the layers of the network
 	if (numHiddenLayers > 0) {
@@ -45,7 +45,7 @@ void NeuralNet::fillNetwork(){
 	}
 }
 
-vector<double> &NeuralNet::getWeights(){
+vector<double> &NeuralNetwork::getWeights(){
 	
 	if (!weightsNeedsUpdate) {
 		return weights;
@@ -69,11 +69,11 @@ vector<double> &NeuralNet::getWeights(){
 	return weights;
 }
 
-int NeuralNet::getNumWeights(){
+int NeuralNetwork::getNumWeights(){
 	return getWeights().size();
 }
 
-void NeuralNet::setWeights(vector<double> &weights){
+void NeuralNetwork::setWeights(vector<double> &weights){
 
 	weightsNeedsUpdate = true;
 	int weightIndex = 0;
@@ -94,7 +94,7 @@ void NeuralNet::setWeights(vector<double> &weights){
 	}
 }
 
-vector<double> NeuralNet::Update(vector<double> &inputs){
+vector<double> NeuralNetwork::update(vector<double> &inputs){
 	//stores the resultant outputs from each layer
 	vector<double> outputs;
 	
@@ -145,4 +145,46 @@ vector<double> NeuralNet::Update(vector<double> &inputs){
 	}
 	
 	return outputs;
+}
+
+void NeuralNetwork::describeNetwork(){
+	
+	cout << "Neural Network: " << endl;
+	
+	printf("In: %d Out: %d Hidden: %d NeuronPerHidden: %d\n", numInputs, numOutputs, numHiddenLayers, neuronsPerHiddenLayer);
+	
+	//Layers
+	for (int i = 0; i < numHiddenLayers + 1; i++) {
+		
+		cout << "\tLayer: " << endl;
+		
+		//Neurons
+		for (int j = 0; j < layers[i].getNumNeurons(); j++) {
+			
+			cout << "\t\tNeuron: ";
+			vector<double> weights = (layers[i].getNeurons())[j].getWeights();
+			
+			//Weights
+			for (int k = 0; k < weights.size(); k++){
+				
+				printf("%0.3f  ", weights[k]);
+			}
+			cout << endl;
+		}
+	}
+}
+
+void NeuralNetwork::showUpdateResults(vector<double> inputs){
+	
+	cout << "Inputs: ";
+	for (int i = 0; i < inputs.size(); i++){
+		printf("%0.3f ", inputs[i]);
+	}
+	
+	vector<double> outputs = update(inputs);
+
+	cout << "Outputs: ";
+	for (int i = 0; i < outputs.size(); i++){
+		printf("%0.3f ", outputs[i]);
+	}
 }
