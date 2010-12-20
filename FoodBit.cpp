@@ -33,8 +33,12 @@ void Foodbit::giveFood(Nomlet &nomlet){
 	evaluateSize();
 }
 
+double Foodbit::getEnergy(){
+	return energy;
+}
+
 float Foodbit::getSize(){
-	return size;
+	return size + FOODBIT_MINIMUM_SIZE;
 }
 
 Coordinate Foodbit::getLocation(){

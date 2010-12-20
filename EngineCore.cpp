@@ -26,7 +26,7 @@ void update(int value) {
 	
 	glutPostRedisplay();
 	
-	glutTimerFunc(25, update, 0);
+	glutTimerFunc(TIME_INTERVAL, update, 0);
 }
 
 
@@ -39,18 +39,17 @@ void moveNomlets(){
 		nomlet.move();
 	}
 }
-
+ 
 void cullFoodbits(){
 	vector<Foodbit> &foodbits = manager->getFoodbits();
 	
 	for (int i = 0; i < foodbits.size(); i++) {
 		Foodbit &foodbit = foodbits[i];
 		
-		if (foodbit.getSize() <= 0.0f) {
+		if (foodbit.getEnergy() <= 0.0f) {
 			foodbits.erase(foodbits.begin()+i);
 			Foodbit *foodbit = new Foodbit();
 			foodbits.push_back(*foodbit);
-
 		}
 	}
 }

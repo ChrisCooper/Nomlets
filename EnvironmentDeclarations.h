@@ -36,11 +36,11 @@ float maximumCameraDistance = 30.0f;
 //Game configuration
 const int SCREEN_WIDTH = 1200;
 const int SCREEN_HEIGHT = 800;
-const int TIME_INTERVAL = 25;
+int TIME_INTERVAL = 25;
 
-int INITIAL_FOODBITS = 50;
-int INITIAL_NOMLETS = 20;
-float MAP_SIZE = 10.0f;
+int INITIAL_FOODBITS = 250;
+int INITIAL_NOMLETS = 50;
+float MAP_SIZE = 15.0f;
 int MAX_FOOD_VALUE = 1500;
 int MIN_FOOD_VALUE = 50;
 int AVG_FOOD_BITES = 10;
@@ -73,6 +73,7 @@ GLfloat nomletDeadColor[4] = {0.7f, 0.1f, 0.0f, 1.0f};
 
 //Object Attributes
 float FOODBIT_SIZE = 0.002f;
+float FOODBIT_MINIMUM_SIZE = 0.002f;
 float NOMLET_SIZE = 0.1f;
 float NOMLET_LENGTH = 0.2f;
 
@@ -82,4 +83,5 @@ ModelManager *manager = NULL;
 
 
 //Costs
+float LIVING_COST = 1.0f;
 float MOVEMENT_COST = 10.0f;

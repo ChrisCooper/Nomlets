@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		8DD76F650486A84900D96B5E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.cpp */; settings = {ATTRIBUTES = (); }; };
 		8DD76F6A0486A84900D96B5E /* Nomlets.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859E8B029090EE04C91782 /* Nomlets.1 */; };
+		BF2AE01712BD8D18001E3862 /* NeuronLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF2AE01612BD8D18001E3862 /* NeuronLayer.cpp */; };
+		BF2AE05012BDAE23001E3862 /* NeuralNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF2AE04F12BDAE23001E3862 /* NeuralNetwork.cpp */; };
+		BF8415F912BB25CE000A9745 /* Neuron.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF8415F812BB25CE000A9745 /* Neuron.cpp */; };
 		BF94E9EF12B891E1007B6F99 /* GraphicsCore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF94E9EE12B891E1007B6F99 /* GraphicsCore.cpp */; };
 		BF94EA3212B89A52007B6F99 /* InputCore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF94EA3112B89A52007B6F99 /* InputCore.cpp */; };
 		BF94EA5412B8A414007B6F99 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF94EA5312B8A414007B6F99 /* OpenGL.framework */; };
@@ -38,6 +41,12 @@
 /* Begin PBXFileReference section */
 		08FB7796FE84155DC02AAC07 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		8DD76F6C0486A84900D96B5E /* Nomlets */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Nomlets; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF2AE01512BD8D18001E3862 /* NeuronLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeuronLayer.h; sourceTree = "<group>"; };
+		BF2AE01612BD8D18001E3862 /* NeuronLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NeuronLayer.cpp; sourceTree = "<group>"; };
+		BF2AE04E12BDAE23001E3862 /* NeuralNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeuralNetwork.h; sourceTree = "<group>"; };
+		BF2AE04F12BDAE23001E3862 /* NeuralNetwork.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NeuralNetwork.cpp; sourceTree = "<group>"; };
+		BF8415F712BB25CE000A9745 /* Neuron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Neuron.h; sourceTree = "<group>"; };
+		BF8415F812BB25CE000A9745 /* Neuron.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Neuron.cpp; sourceTree = "<group>"; };
 		BF94E9ED12B891E1007B6F99 /* GraphicsCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicsCore.h; sourceTree = "<group>"; };
 		BF94E9EE12B891E1007B6F99 /* GraphicsCore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GraphicsCore.cpp; sourceTree = "<group>"; };
 		BF94EA3012B89A52007B6F99 /* InputCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputCore.h; sourceTree = "<group>"; };
@@ -109,9 +118,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		BF8415F612BB25C3000A9745 /* Brains */ = {
+			isa = PBXGroup;
+			children = (
+				BF8415F712BB25CE000A9745 /* Neuron.h */,
+				BF8415F812BB25CE000A9745 /* Neuron.cpp */,
+				BF2AE01512BD8D18001E3862 /* NeuronLayer.h */,
+				BF2AE01612BD8D18001E3862 /* NeuronLayer.cpp */,
+				BF2AE04E12BDAE23001E3862 /* NeuralNetwork.h */,
+				BF2AE04F12BDAE23001E3862 /* NeuralNetwork.cpp */,
+			);
+			name = Brains;
+			sourceTree = "<group>";
+		};
 		BF94E9E112B8909B007B6F99 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BF8415F612BB25C3000A9745 /* Brains */,
 				BFE15D4112B8CE0600371B15 /* Foodbit.h */,
 				BFE15D4012B8CE0600371B15 /* Foodbit.cpp */,
 				BFE15D4312B8CE0600371B15 /* Logistics.h */,
@@ -209,6 +232,9 @@
 				BFE15D4A12B8CE0600371B15 /* ModelManager.cpp in Sources */,
 				BFE15D4B12B8CE0600371B15 /* Nomlet.cpp in Sources */,
 				BFD2417512B9D33400911FC3 /* Utilities.cpp in Sources */,
+				BF8415F912BB25CE000A9745 /* Neuron.cpp in Sources */,
+				BF2AE01712BD8D18001E3862 /* NeuronLayer.cpp in Sources */,
+				BF2AE05012BDAE23001E3862 /* NeuralNetwork.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,6 +21,7 @@ class Foodbit {
 public:
 	Foodbit();
 	float getSize();
+	double getEnergy();
 	Coordinate getLocation();
 	void giveFood(Nomlet &nomlet);
 	void evaluateSize();

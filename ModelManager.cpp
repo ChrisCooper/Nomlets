@@ -12,13 +12,12 @@
 
 ModelManager::ModelManager(){
 	for (int i = 0; i < INITIAL_FOODBITS; i++){
-		Foodbit *foodbit = new Foodbit();
-		foodbits.push_back(*foodbit);
+//		Foodbit *foodbit = new Foodbit();
+		foodbits.push_back(Foodbit());
 	}
 	
 	for (int i = 0; i < INITIAL_NOMLETS; i++){
-		Nomlet *nomlet = new Nomlet();
-		nomlets.push_back(*nomlet);
+		nomlets.push_back(Nomlet());
 	}
 }
 

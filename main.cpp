@@ -5,6 +5,8 @@
  *  Created by Chris Cooper on 10-12-14.
  *  Copyright 2010 Chris Cooper. All rights reserved.
  *
+ *	Thanks to ai-junkie.com for the project idea, and source code assistance!
+ *
  */
 
 #include <iostream>

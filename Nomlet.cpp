@@ -51,13 +51,13 @@ void Nomlet::move(){
 	location.x += speed * cos(degreeToRadian(-direction));
 	location.y += speed * sin(degreeToRadian(-direction));
 	
+	energy -= LIVING_COST;
 	energy -= MOVEMENT_COST * (speed/NOMLET_TOP_SPEED);
 	clampEnergy();
 	
 	capLocation();
 	
 	speed *= NOMLET_INERTIA;
-	accelerate();
 }
 
 void Nomlet::giveEnergy(double energyGiven){

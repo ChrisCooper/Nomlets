@@ -82,6 +82,7 @@ extern GLfloat nomletDeadColor[4];
 
 //Object Attributes
 extern float FOODBIT_SIZE;
+extern float FOODBIT_MINIMUM_SIZE;
 extern float NOMLET_SIZE;
 extern float NOMLET_LENGTH;
 
@@ -90,6 +91,7 @@ extern ModelManager *manager;
 
 
 //Costs
+extern float LIVING_COST;
 extern float MOVEMENT_COST;
 
 
