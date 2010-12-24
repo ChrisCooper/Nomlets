@@ -10,6 +10,17 @@
 #include "NeuralNetwork.h"
 #include "Utilities.h"
 
+NeuralNetwork::NeuralNetwork(){
+	numInputs = NEURAL_INPUTS;
+	numOutputs = NEURAL_OUTPUTS;
+	numHiddenLayers = NEURAL_HIDDEN_LAYERS;
+	neuronsPerHiddenLayer = NEURONS_PER_HIDDEN_LAYER;
+	
+	weightsNeedsUpdate = true;
+	
+	fillNetwork();
+}
+
 NeuralNetwork::NeuralNetwork(int _numInputs, int _numOutputs, int _numHiddenLayers, int _neuronsPerHiddenLayer) {
 	numInputs = _numInputs;
 	numOutputs = _numOutputs;

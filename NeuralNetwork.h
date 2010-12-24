@@ -7,6 +7,9 @@
  *
  */
 
+#ifndef _NEURALNETWORK_
+#define _NEURALNETWORK_
+
 #include <iostream>
 #include <vector>
 #include "NeuronLayer.h"
@@ -26,6 +29,7 @@ private:
 	bool weightsNeedsUpdate;
 	
 public:
+	NeuralNetwork();
 	NeuralNetwork(int _numInputs, int _numOutputs, int _numHiddenLayers, int _neuronsPerHiddenLayer);
 	
 	void fillNetwork();
@@ -39,3 +43,5 @@ public:
 	void describeNetwork();
 	void showUpdateResults(vector<double> inputs);
 };
+
+#endif
