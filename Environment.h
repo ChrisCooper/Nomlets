@@ -59,7 +59,13 @@ extern float NOMLET_INERTIA;
 extern float NOMLET_ACCELLERATION;
 extern float NOMLET_TURN_SPEED;
 extern float NOMLET_EATING_RANGE;
+
+//NeuralNetwork
 extern double SIGMOID_CURVE_FLATNESS;
+extern int NEURAL_INPUTS;
+extern int NEURAL_OUTPUTS;
+extern int NEURAL_HIDDEN_LAYERS;
+extern int NEURONS_PER_HIDDEN_LAYER;
 
 //Lighting
 extern GLfloat ambientColor[];
